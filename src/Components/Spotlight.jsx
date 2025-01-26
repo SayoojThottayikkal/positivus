@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../images/Illustration.png";
+import img from "../images/Illustration1.jpg";
 import logo1 from "../images/Company logo.jpg";
 import logo2 from "../images/Company logo.png";
 import logo3 from "../images/Company logo5.jpg";
