@@ -22,3 +22,15 @@ ol {
   font-family: "spaceGroesk_bold";
   src: url("./Fonts/SpaceGrotesk-Bold.woff") format("woff2");
 }
+h2 {
+  font-family: "spaceGroesk_semibold";
+}
+h3 {
+  font-family: "spaceGroesk_semibold";
+}
+p {
+  font-family: "spaceGroesk";
+}
+button {
+  font-family: "spaceGroesk";
+}

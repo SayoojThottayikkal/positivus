@@ -163,6 +163,7 @@ const Banner = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   li {
     &:first-child {
       margin-left: 0;

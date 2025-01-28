@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
-import img1 from "../images/tokyo-magnifier-web-search-with-elements 2.jpg";
+import img1 from "../images/tokyo-magnifier-web-search-with-elements 2.png";
 import img2 from "../images/tokyo-selecting-a-value-in-the-browser-window 1.jpg";
 import img3 from "../images/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.png";
 import img4 from "../images/tokyo-sending-messages-from-one-place-to-another 1.png";
-import img5 from "../images/tokyo-magnifier-web-search-with-elements 2.jpg";
+import img5 from "../images/tokyo-many-browser-windows-with-different-information 1.png";
 import img6 from "../images/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.png";
-import icon from "../images/Icon.jpg";
-import icon2 from "../images/Icon.png";
+import icon from "../images/Arrow 1.png";
+import icon2 from "../images/arrow 2.png";
 import styled from "styled-components";
 
 function Services() {
@@ -17,108 +17,126 @@ function Services() {
         <Header>
           <h2>Services</h2>
           <p>
-            At our digital marketing agency, we offer a range of services to{" "}
+            At our digital marketing agency, we offer a range of services to
             <br />
             help businesses grow and succeed online. These services include:
           </p>
         </Header>
-        <Boxmodel>
-          <li>
-            <div>
-              <h3>
-                Search engine <br />
-                optimization
-              </h3>
-              <p>
-                <img src={icon} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+        <BoxType>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3> Search engine</h3>
+                <br />
+                <h3>optimization</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img1} alt="" />
-            </Imagediv>
-          </li>
+            </RightDiv>
+          </Box>
 
-          <li>
-            <div>
-              <h3>
-                Pay-per-click <br />
-                advertising
-              </h3>
-              <p>
-                <img src={icon} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>Pay-per-click</h3>
+                <br />
+                <h3> advertising</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img2} alt="" />
-            </Imagediv>
-          </li>
+            </RightDiv>
+          </Box>
 
-          <li>
-            <div>
-              <h3>
-                Social Media <br />
-                Marketing
-              </h3>
-              <p>
-                <img src={icon2} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>Social Media</h3>
+                <br />
+                <h3> Marketing</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon2} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img3} alt="" />
-            </Imagediv>
-          </li>
+            </RightDiv>
+          </Box>
 
-          <li>
-            <div>
-              <h3>
-                Email <br />
-                Marketing
-              </h3>
-              <p>
-                <img src={icon} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>Email</h3>
+                <br />
+                <h3>Marketing</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img4} alt="" />
-            </Imagediv>
-          </li>
+            </RightDiv>
+          </Box>
 
-          <li>
-            <div>
-              <h3>
-                Content <br />
-                Creation
-              </h3>
-              <p>
-                <img src={icon} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>Content</h3>
+                <br />
+                <h3>Creation</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img5} alt="" />
-            </Imagediv>
-          </li>
+            </RightDiv>
+          </Box>
 
-          <li>
-            <div>
-              <h3>
-                Analytics and <br />
-                Tracking
-              </h3>
-              <p>
-                <img src={icon2} alt="" />
-                Learn more
-              </p>
-            </div>
-            <Imagediv>
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>Analytics and</h3>
+                <br />
+                <h3>Tracking</h3>
+              </Top>
+              <Bottom>
+                <p>
+                  <img src={icon2} alt="" />
+                  &nbsp; Learn more
+                </p>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
               <img src={img6} alt="" />
-            </Imagediv>
-          </li>
-        </Boxmodel>
+            </RightDiv>
+          </Box>
+        </BoxType>
       </Maindiv>
     </>
   );
@@ -126,6 +144,7 @@ function Services() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 90px;
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -146,36 +165,93 @@ const Header = styled.div`
     font-family: "spaceGroesk_light";
   }
 `;
-const Boxmodel = styled.ul`
+const BoxType = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  li {
-    border: 1px solid #191a23;
-    border-radius: 45px;
-    box-shadow: rgba(25, 26, 35, 1);
-    display: flex;
-    width: 430px;
-    height: 200px;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-
-    div {
-      h3 {
+`;
+const Box = styled.div`
+  border-radius: 45px;
+  border: 1px solid rgba(25, 26, 35, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 38%;
+  height: 200px;
+  margin-top: 30px;
+  box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 5);
+  background: #f3f3f3;
+  &:nth-child(2) {
+    background-color: #b9ff66;
+    h3 {
+      background-color: #f3f3f3;
+    }
+  }
+  &:nth-child(3) {
+    background-color: #191a23;
+    h3 {
+      background: white;
+    }
+    p {
+      color: white;
+      img {
+        background-color: white;
+        color: black;
       }
-      p {
-        margin: 0 auto;
-        img {
-          width: 20px;
-          height: 20px;
-        }
+    }
+  }
+  &:nth-child(5) {
+    background: #b9ff66;
+    h3 {
+      background: white;
+    }
+  }
+  &:nth-child(6) {
+    background: #191a23;
+    p {
+      color: white;
+      img {
+        background: white;
       }
     }
   }
 `;
-const Imagediv = styled.div``;
-
+const Leftdiv = styled.div`
+  height: 210px;
+`;
+const Top = styled.div`
+  margin-bottom: 93px;
+  h3 {
+    padding: 3px;
+    background: #b9ff66;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+`;
+const Bottom = styled.div`
+  width: 164px;
+  height: 41px;
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    img {
+      background: black;
+      border-radius: 50%;
+      padding: 5px;
+    }
+  }
+`;
+const RightDiv = styled.div`
+  width: 210px;
+  img {
+    width: 100%;
+    display: block;
+  }
+`;
 export default Services;
