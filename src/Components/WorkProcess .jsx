@@ -98,9 +98,13 @@ const Heading = styled.div`
     margin-right: 40px;
     background: #b9ff66;
     padding: 5px;
+    font-size: 40px;
+    font-weight: 500;
     border-radius: 4px;
   }
   p {
+    font-size: 18px;
+    font-weight: 400;
   }
 `;
 const OptionDiv = styled.div``;

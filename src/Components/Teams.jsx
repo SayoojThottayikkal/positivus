@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import dark from "../images/Vector.png";
 import icon from "../images/linkedin (1).png";
 import img1 from "../images/Mask group.png";
 import img2 from "../images/Mask group (1).png";
@@ -24,7 +25,10 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img2} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img2} alt="" />
+                  </Image>
 
                   <span>
                     <h4>John Smith</h4>
@@ -45,7 +49,10 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img1} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img1} alt="" />
+                  </Image>
                   <span>
                     <h4>Jane Doe</h4>
                     <p>Director of Operations</p>
@@ -65,7 +72,10 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img4} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img4} alt="" />
+                  </Image>
                   <span>
                     <h4>Michael Brown</h4>
                     <p>Senior SEO Specialist</p>
@@ -85,7 +95,10 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img3} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img3} alt="" />
+                  </Image>
                   <span>
                     <h4>Emily Johnson</h4>
                     <p>PPC Manager</p>
@@ -105,7 +118,10 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img5} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img5} alt="" />
+                  </Image>
                   <span>
                     <h4>Brian Williams</h4>
                     <p>Social Media Specialist</p>
@@ -126,7 +142,11 @@ function Teams() {
             <LI>
               <TOP>
                 <div>
-                  <img src={img6} alt="" />
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={img6} alt="" />
+                  </Image>
+
                   <span>
                     <h4>Sarah Kim</h4>
                     <p>Content Creator</p>
@@ -145,6 +165,9 @@ function Teams() {
             </LI>
           </UL>
         </Boxdiv>
+        <Button>
+          <button>See all team</button>
+        </Button>
       </Maindiv>
     </>
   );
@@ -190,7 +213,7 @@ const LI = styled.div`
   padding: 40px 35px;
   box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 5);
   height: 241px;
-  width: 290px;
+  width: 300px;
   margin-bottom: 30px;
 `;
 const TOP = styled.div`
@@ -225,7 +248,30 @@ const TOP = styled.div`
   }
 `;
 const Bottom = styled.p`
-  /* width: 80%; */
+  width: 90%;
+`;
+const Button = styled.div`
+  margin-bottom: 30px;
+  text-align: end;
+  button {
+    height: 68px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 14px;
+  }
+`;
+const Image = styled.div`
+  position: relative;
+  img {
+    &:nth-child(2) {
+      position: absolute;
+      left: -6px;
+      top: -6px;
+    }
+  }
 `;
 
 export default Teams;

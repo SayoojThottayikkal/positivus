@@ -124,6 +124,8 @@ const HeaderContainer = styled.div`
     border-radius: 4px;
     margin-right: 40px;
     background-color: #b9ff66;
+    font-size: 40px;
+    font-weight: 500;
     height: 51px;
     padding: 5px;
 

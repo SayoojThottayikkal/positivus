@@ -29,6 +29,8 @@ h3 {
   font-family: "spaceGroesk_semibold";
 }
 p {
+  font-size: 18px;
+  font-weight: 400;
   font-family: "spaceGroesk";
 }
 button {
