@@ -1,15 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Slider from "react-slick";
 
 function Testimonials() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <>
       <Maindiv>
@@ -21,9 +13,20 @@ function Testimonials() {
           </p>
         </Heading>
 
-        <Slider {...settings}>
-          <Slide></Slide>
-        </Slider>
+        <Slide>
+          <p>
+            "We have been working with Positivus for the past year and have seen
+            a significant increase in website traffic and leads as a result of
+            their efforts. The team is professional, responsive, and truly cares
+            about the success of our business. We highly recommend Positivus to
+            any company looking to grow their online presence."
+          </p>
+          <div>
+            <h4>
+              John Smith <br /> <small>Marketing Director at XYZ Corp</small>
+            </h4>
+          </div>
+        </Slide>
       </Maindiv>
     </>
   );
@@ -31,6 +34,7 @@ function Testimonials() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
+  height: 100vh;
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -51,6 +55,27 @@ const Heading = styled.div`
   }
 `;
 const Slide = styled.div`
-  background: gray;
+  border-radius: 45px;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    width: 50%;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px solid #b9ff66;
+  }
+  div {
+    width: 50%;
+    h4 {
+    }
+    small {
+    }
+  }
+  background-color: #191a23;
 `;
 export default Testimonials;

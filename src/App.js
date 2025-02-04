@@ -1,4 +1,6 @@
 import "./App.css";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import Poster from "./Components/Poster";
 import Services from "./Components/Services";
 import Spotlight from "./Components/Spotlight";
@@ -15,6 +17,8 @@ function App() {
       <WorkProcess />
       <Teams />
       <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }
