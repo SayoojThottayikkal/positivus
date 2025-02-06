@@ -48,7 +48,6 @@ function Contact() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
-  height: 100vh;
 `;
 const Heading = styled.div`
   margin-top: 70px;

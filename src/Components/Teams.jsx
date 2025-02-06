@@ -212,7 +212,7 @@ const LI = styled.div`
   border-radius: 45px;
   padding: 40px 35px;
   box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 5);
-  height: 241px;
+  height: 261px;
   width: 300px;
   margin-bottom: 30px;
 `;
