@@ -175,6 +175,10 @@ function Teams() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -188,11 +192,17 @@ const Header = styled.div`
     font-weight: 500;
     font-size: 40px;
     border-radius: 6px;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
   }
   p {
     font-weight: 400;
     font-size: 18px;
     font-family: "spaceGroesk_light";
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const Boxdiv = styled.div``;
@@ -234,6 +244,9 @@ const TOP = styled.div`
     }
     p {
       margin-top: 0;
+      @media (max-width: 1280px) {
+        font-size: 14px;
+      }
     }
   }
   small {

@@ -65,6 +65,10 @@ const Maindiv = styled.div`
   border-top-right-radius: 45px;
   border-top-left-radius: 45px;
   color: white;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Header = styled.div`
   height: 30px;
@@ -79,6 +83,14 @@ const Logo = styled.div`
       margin-right: 8px;
       height: 28.4px;
       width: 28.9px;
+      @media (max-width: 1280px) {
+        height: 25.4px;
+        width: 20.9px;
+      }
+    }
+    @media (max-width: 1280px) {
+      height: 25.4px;
+      width: 60.9px;
     }
   }
 `;
@@ -88,6 +100,9 @@ const Nav = styled.ul`
   li {
     margin-right: 40px;
     cursor: pointer;
+    @media (max-width: 1280px) {
+      margin-right: 20px;
+    }
   }
 `;
 const Company = styled.div`
@@ -114,6 +129,9 @@ const Leftdiv = styled.div`
     margin-bottom: 0;
   }
   p {
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const Rightdiv = styled.div`
@@ -121,7 +139,10 @@ const Rightdiv = styled.div`
   background: #292a32;
 
   border-radius: 10px;
-
+  @media (max-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
   input {
     padding: 20px 35px;
     border-radius: 14px;
@@ -130,12 +151,18 @@ const Rightdiv = styled.div`
     border: 1px solid white;
     margin-right: 10px;
     cursor: pointer;
+    @media (max-width: 1280px) {
+      padding: 5px 10px;
+    }
   }
   button {
     background-color: rgb(185, 255, 102);
     padding: 20px 35px;
     border-radius: 14px;
     cursor: pointer;
+    @media (max-width: 1280px) {
+      padding: 5px 55px;
+    }
   }
 `;
 const FooterDiv = styled.div`
@@ -147,6 +174,9 @@ const FooterDiv = styled.div`
     margin-right: 30px;
     &:last-child {
       text-decoration: underline;
+    }
+    @media (max-width: 1280px) {
+      font-size: 14px;
     }
   }
 `;

@@ -73,6 +73,10 @@ function Poster() {
 const Maindiv = styled.div`
   padding-left: 100px;
   padding-right: 100px;
+  @media (max-width: 1280px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 `;
 const BoxContainer = styled.div`
   background-color: #f3f3f3;
@@ -83,17 +87,29 @@ const BoxContainer = styled.div`
   padding-right: 60px;
   height: 347px;
   border-radius: 45px;
+  @media (max-width: 1280px) {
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
 const LeftDiv = styled.div`
   width: 500px;
   height: 227px;
+
   h3 {
     font-size: 30px;
     font-weight: 500;
+    @media (max-width: 1280px) {
+      font-size: 20px;
+    }
   }
   p {
     font-weight: 400;
     font-size: 18px;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
   button {
     height: 68px;
@@ -104,10 +120,21 @@ const LeftDiv = styled.div`
     border-radius: 14px;
     font-size: 18px;
     font-weight: 400;
+    @media (max-width: 1280px) {
+      padding: 10px 25px;
+      height: 50px;
+      width: 190px;
+      font-size: 12px;
+    }
   }
 `;
 const RightDiV = styled.div`
   height: 394px;
+  @media (max-width: 1280px) {
+    width: 50%;
+    height: 270px;
+  }
+
   img {
     width: 100%;
     display: block;
@@ -132,11 +159,17 @@ const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
   }
   p {
     font-size: 18px;
     font-weight: 400;
     width: 580px;
+    @media (max-width: 1280px) {
+      font-size: 12px;
+    }
   }
 `;
 const LearnMore = styled.div`
@@ -162,13 +195,26 @@ const LearnMore = styled.div`
         color: white;
         line-height: 22.97px;
         margin-right: 30px;
+        @media (max-width: 1280px) {
+          font-size: 14px;
+          margin-left: 20px;
+        }
       }
       span {
         text-align: center;
         color: #b9ff66;
+        @media (max-width: 1280px) {
+          font-size: 14px;
+          margin-left: 20px;
+        }
+
         img {
           height: 15px;
           width: 15px;
+          @media (max-width: 1280px) {
+            width: 10px;
+            height: 10px;
+          }
         }
       }
     }

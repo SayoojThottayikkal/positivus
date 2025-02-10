@@ -87,6 +87,10 @@ function WorkProcess() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -101,10 +105,17 @@ const Heading = styled.div`
     font-size: 40px;
     font-weight: 500;
     border-radius: 4px;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+      width: 30%;
+    }
   }
   p {
     font-size: 18px;
     font-weight: 400;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const OptionDiv = styled.div``;
@@ -116,9 +127,15 @@ const Item2 = styled.div`
   border-radius: 45px;
   box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 5);
   background: #b9ff66;
+  @media (max-width: 1280px) {
+    height: 210px;
+  }
 
   p {
     padding: 20px 0;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const Item1 = styled.div`
@@ -157,6 +174,9 @@ const Item = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1280px) {
+    height: 60px;
+  }
   h1 {
     font-size: 60px;
     font-weight: 500;

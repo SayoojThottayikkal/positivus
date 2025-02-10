@@ -35,6 +35,10 @@ const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
   height: 100vh;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -48,10 +52,16 @@ const Heading = styled.div`
     font-size: 40px;
     padding: 5px;
     border-radius: 4px;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
   }
   p {
     font-size: 18px;
     font-weight: 400;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const Slide = styled.div`
@@ -62,12 +72,18 @@ const Slide = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1280px) {
+    padding: 20px;
+  }
 
   p {
     width: 50%;
     padding: 50px;
     border-radius: 45px;
     border: 1px solid #b9ff66;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
   div {
     width: 50%;

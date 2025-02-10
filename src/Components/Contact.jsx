@@ -48,6 +48,10 @@ function Contact() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -61,10 +65,16 @@ const Heading = styled.div`
     font-size: 40px;
     padding: 5px;
     border-radius: 4px;
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
   }
   p {
     font-size: 18px;
     font-weight: 400;
+    @media (max-width: 1280px) {
+      font-size: 14px;
+    }
   }
 `;
 const ContactDiv = styled.div`
@@ -99,6 +109,10 @@ const LeftDiv = styled.div`
     width: 556px;
 
     height: 68px;
+    @media (max-width: 1280px) {
+      width: 330px;
+      padding: 10px 15px;
+    }
   }
 `;
 const RightDiv = styled.div`
@@ -109,6 +123,9 @@ const RightDiv = styled.div`
     right: -340px;
     height: 500px;
     display: block;
+    @media (max-width: 1280px) {
+      right: -350px;
+    }
   }
 `;
 const Namediv = styled.div`
@@ -119,6 +136,10 @@ const Namediv = styled.div`
     width: 500px;
     border-radius: 14px;
     padding: 18px 30px 18px 30px;
+    @media (max-width: 1280px) {
+      width: 300px;
+      padding: 10px 15px;
+    }
   }
 `;
 const Emaildiv = styled.div`
@@ -129,6 +150,10 @@ const Emaildiv = styled.div`
     width: 500px;
     border-radius: 14px;
     padding: 18px 30px 18px 30px;
+    @media (max-width: 1280px) {
+      width: 300px;
+      padding: 10px 15px;
+    }
   }
 `;
 const Messagediv = styled.div`
@@ -140,6 +165,11 @@ const Messagediv = styled.div`
     height: 170px;
     border-radius: 14px;
     padding: 18px 30px 18px 30px;
+    @media (max-width: 1280px) {
+      width: 300px;
+      padding: 10px 15px;
+      height: 100px;
+    }
   }
 `;
 export default Contact;

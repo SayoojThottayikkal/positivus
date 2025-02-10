@@ -45,33 +45,36 @@ function Spotlight() {
           </Rightcontainer>
         </Maincontainer1>
         <Banner>
-          <li>
+          <div>
             <img src={logo1} alt="amazon" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={logo3} alt="hubspot" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={logo2} alt="noation" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={logo6} alt="" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={logo4} alt="" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={logo5} alt="" />
-          </li>
+          </div>
         </Banner>
       </Mainhead>
     </>
   );
 }
 const Mainhead = styled.div`
-  height: 771px;
   margin-left: 100px;
   margin-right: 100px;
+  @media (max-width: 1280px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 const Maincontainer = styled.div`
   margin-top: 60px;
@@ -79,13 +82,19 @@ const Maincontainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 const Imagecontainer = styled.div`
   height: 64px;
   width: 219.54px;
   padding: 10px 10px;
-
-  img {
+  @media (max-width: 1280px) {
+    width: 150px;
+  }
+  \ img {
     margin-top: 18px;
     height: 36px;
     width: 100%;
@@ -111,6 +120,12 @@ const Navbarconatiner = styled.div`
       border: 1px solid black;
       cursor: pointer;
       margin: 0 auto;
+      @media (max-width: 1280px) {
+        padding: 10px 15px;
+      }
+    }
+    @media (max-width: 1280px) {
+      margin-right: 20px;
     }
   }
 `;
@@ -125,6 +140,10 @@ const Maincontainer1 = styled.div`
 const Leftcontainer = styled.div`
   width: 531px;
   height: 481px;
+  @media (max-width: 1280px) {
+    width: 50%;
+  }
+
   h1 {
     margin-top: 0;
     width: 531px;
@@ -132,6 +151,11 @@ const Leftcontainer = styled.div`
     font-family: "spaceGroesk_semibold";
     font-weight: 500;
     font-size: 60px;
+    @media (max-width: 1280px) {
+      font-size: 50px;
+      width: 410px;
+      margin-bottom: 30px;
+    }
   }
   p {
     width: 498px;
@@ -140,6 +164,11 @@ const Leftcontainer = styled.div`
     font-weight: 400;
     line-height: 28px;
     font-size: 20px;
+    @media (max-width: 1280px) {
+      font-size: 16px;
+      width: 400px;
+      margin-bottom: 10px;
+    }
   }
   button {
     margin-top: 10px;
@@ -149,27 +178,37 @@ const Leftcontainer = styled.div`
     border-radius: 16px;
     background: black;
     color: white;
+    @media (max-width: 1280px) {
+      padding: 15px 25px;
+      width: 200px;
+    }
   }
 `;
 const Rightcontainer = styled.div`
   width: 600.46px;
   height: 515px;
+  @media (max-width: 1280px) {
+    width: 50%;
+    height: 600px;
+  }
+
   img {
     width: 100%;
     display: block;
   }
 `;
-const Banner = styled.ul`
+const Banner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  li {
-    &:first-child {
-      margin-left: 0;
-    }
+  div {
     img {
+      @media (max-width: 1280px) {
+        width: 80%;
+      }
     }
   }
 `;
+
 export default Spotlight;
