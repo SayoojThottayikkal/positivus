@@ -71,11 +71,15 @@ function Poster() {
   );
 }
 const Maindiv = styled.div`
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   @media (max-width: 1280px) {
-    padding-left: 80px;
-    padding-right: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 `;
 const BoxContainer = styled.div`
@@ -89,6 +93,11 @@ const BoxContainer = styled.div`
   border-radius: 45px;
   @media (max-width: 1280px) {
     height: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 980px) {
+    height: 220px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -109,6 +118,9 @@ const LeftDiv = styled.div`
     font-size: 18px;
     @media (max-width: 1280px) {
       font-size: 14px;
+    }
+    @media (max-width: 980px) {
+      width: 90%;
     }
   }
   button {
@@ -134,10 +146,16 @@ const RightDiV = styled.div`
     width: 50%;
     height: 270px;
   }
+  @media (max-width: 980px) {
+    height: 230px;
+  }
 
   img {
     width: 100%;
     display: block;
+    @media (max-width: 980px) {
+      height: 100%;
+    }
   }
 `;
 
@@ -146,6 +164,10 @@ const HeaderContainer = styled.div`
   align-items: center;
   margin-top: 90px;
   margin-bottom: 60px;
+  @media (max-width: 980px) {
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
 
   h2 {
     border-radius: 4px;
@@ -161,6 +183,7 @@ const HeaderContainer = styled.div`
     justify-content: center;
     @media (max-width: 1280px) {
       font-size: 30px;
+      padding: 10px;
     }
   }
   p {
@@ -179,11 +202,18 @@ const LearnMore = styled.div`
     display: flex;
     padding: 70px 60px;
     border-radius: 45px;
+    @media (max-width: 980px) {
+      padding: 35px 30px;
+    }
     li {
       width: 286px;
       height: 163px;
       border-right: 1px solid white;
       margin: 0 auto;
+
+      @media (max-width: 980px) {
+        height: 180px;
+      }
 
       &:last-child {
         border-right: 0;
@@ -198,6 +228,10 @@ const LearnMore = styled.div`
         @media (max-width: 1280px) {
           font-size: 14px;
           margin-left: 20px;
+        }
+        @media (max-width: 980px) {
+          font-size: 12px;
+          line-height: 20px;
         }
       }
       span {

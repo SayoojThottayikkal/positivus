@@ -91,6 +91,10 @@ const Maindiv = styled.div`
     margin-left: 80px;
     margin-right: 80px;
   }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -130,11 +134,19 @@ const Item2 = styled.div`
   @media (max-width: 1280px) {
     height: 210px;
   }
+  @media (max-width: 980px) {
+    height: 200px;
+    padding: 31px 60px;
+  }
 
   p {
     padding: 20px 0;
     @media (max-width: 1280px) {
       font-size: 14px;
+    }
+    @media (max-width: 980px) {
+      font-size: 12px;
+      padding: 10px 0;
     }
   }
 `;
@@ -143,6 +155,9 @@ const Item1 = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  @media (max-width: 980px) {
+    margin-bottom: 0;
+  }
 `;
 const Left = styled.div`
   display: flex;

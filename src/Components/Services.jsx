@@ -18,7 +18,6 @@ function Services() {
           <h2>Services</h2>
           <p>
             At our digital marketing agency, we offer a range of services to
-            <br />
             help businesses grow and succeed online. These services include:
           </p>
         </Header>
@@ -149,6 +148,10 @@ const Maindiv = styled.div`
     margin-left: 80px;
     margin-right: 80px;
   }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -168,6 +171,7 @@ const Header = styled.div`
     }
   }
   p {
+    width: 580px;
     font-weight: 400;
     font-size: 18px;
     font-family: "spaceGroesk_light";
@@ -230,6 +234,10 @@ const Box = styled.div`
     width: 33%;
     height: 150px;
   }
+  @media (max-width: 980px) {
+    width: 100%;
+    height: 180px;
+  }
 `;
 const Leftdiv = styled.div`
   height: 210px;
@@ -252,6 +260,9 @@ const Top = styled.div`
     @media (max-width: 1280px) {
       font-size: 20px;
     }
+    @media (max-width: 980px) {
+      font-size: 30px;
+    }
   }
 `;
 const Bottom = styled.div`
@@ -264,16 +275,25 @@ const Bottom = styled.div`
     align-items: center;
     @media (max-width: 1280px) {
       font-size: 16px;
+      @media (max-width: 980px) {
+        font-size: 18px;
+      }
     }
     img {
       background: black;
       border-radius: 50%;
       padding: 5px;
+      @media (max-width: 980px) {
+        height: 20px;
+        width: 20px;
+      }
     }
   }
 `;
 const RightDiv = styled.div`
   width: 210px;
+  @media (max-width: 980px) {
+  }
   img {
     width: 100%;
     display: block;

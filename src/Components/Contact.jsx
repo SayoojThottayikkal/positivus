@@ -52,6 +52,10 @@ const Maindiv = styled.div`
     margin-left: 80px;
     margin-right: 80px;
   }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;

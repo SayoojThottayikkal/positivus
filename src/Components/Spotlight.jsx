@@ -75,6 +75,10 @@ const Mainhead = styled.div`
     margin-left: 80px;
     margin-right: 80px;
   }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 const Maincontainer = styled.div`
   margin-top: 60px;
@@ -86,6 +90,9 @@ const Maincontainer = styled.div`
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 980px) {
+    margin-top: 30px;
+  }
 `;
 const Imagecontainer = styled.div`
   height: 64px;
@@ -94,7 +101,11 @@ const Imagecontainer = styled.div`
   @media (max-width: 1280px) {
     width: 150px;
   }
-  \ img {
+  @media (max-width: 980px) {
+    width: 110px;
+    height: 60px;
+  }
+  img {
     margin-top: 18px;
     height: 36px;
     width: 100%;
@@ -123,6 +134,9 @@ const Navbarconatiner = styled.div`
       @media (max-width: 1280px) {
         padding: 10px 15px;
       }
+      @media (max-width: 980px) {
+        padding: 5px 10px;
+      }
     }
     @media (max-width: 1280px) {
       margin-right: 20px;
@@ -136,6 +150,10 @@ const Maincontainer1 = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 980px) {
+    margin-top: 40px;
+    height: 400px;
+  }
 `;
 const Leftcontainer = styled.div`
   width: 531px;
@@ -156,6 +174,12 @@ const Leftcontainer = styled.div`
       width: 410px;
       margin-bottom: 30px;
     }
+    @media (max-width: 980px) {
+      font-size: 40px;
+      width: 300px;
+      margin-bottom: 0px;
+      display: inline-block;
+    }
   }
   p {
     width: 498px;
@@ -168,6 +192,13 @@ const Leftcontainer = styled.div`
       font-size: 16px;
       width: 400px;
       margin-bottom: 10px;
+    }
+    @media (max-width: 980px) {
+      font-size: 16px;
+      width: 300px;
+      margin-bottom: 10px;
+      line-height: 20px;
+      margin-top: 0;
     }
   }
   button {
@@ -182,6 +213,11 @@ const Leftcontainer = styled.div`
       padding: 15px 25px;
       width: 200px;
     }
+    @media (max-width: 980px) {
+      padding: 5px 10px;
+      width: 200px;
+      margin-top: 0;
+    }
   }
 `;
 const Rightcontainer = styled.div`
@@ -191,8 +227,13 @@ const Rightcontainer = styled.div`
     width: 50%;
     height: 600px;
   }
+  @media (max-width: 980px) {
+    width: 600.46px;
+    height: 400px;
+  }
 
   img {
+    height: 100%;
     width: 100%;
     display: block;
   }
@@ -201,11 +242,16 @@ const Banner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media (max-width: 980px) {
+    margin-top: 0;
+  }
   div {
     img {
       @media (max-width: 1280px) {
         width: 80%;
+      }
+      @media (max-width: 980px) {
+        width: 60%;
       }
     }
   }
