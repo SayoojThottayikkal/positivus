@@ -160,6 +160,10 @@ const Maindiv = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -193,6 +197,17 @@ const Header = styled.div`
     @media (max-width: 640px) {
       width: 100%;
     }
+    @media (max-width: 480px) {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
   }
 `;
 const BoxType = styled.div`
@@ -261,6 +276,14 @@ const Box = styled.div`
     padding: 30px;
     height: 180px;
   }
+  @media (max-width: 480px) {
+    width: 265px;
+    height: 130px;
+    margin-top: 20px;
+  }
+  @media (max-width: 360px) {
+    width: 245px;
+  }
 `;
 const Leftdiv = styled.div`
   height: 210px;
@@ -289,6 +312,12 @@ const Top = styled.div`
     @media (max-width: 640px) {
       font-size: 20px;
     }
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+    @media (max-width: 360px) {
+      font-size: 18px;
+    }
   }
 `;
 const Bottom = styled.div`
@@ -301,9 +330,12 @@ const Bottom = styled.div`
     align-items: center;
     @media (max-width: 1280px) {
       font-size: 16px;
-      @media (max-width: 980px) {
-        font-size: 18px;
-      }
+    }
+    @media (max-width: 980px) {
+      font-size: 18px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
     }
     img {
       background: black;
@@ -313,16 +345,27 @@ const Bottom = styled.div`
         height: 20px;
         width: 20px;
       }
+      @media (max-width: 480px) {
+        height: 15px;
+        width: 15px;
+      }
     }
   }
 `;
 const RightDiv = styled.div`
   width: 210px;
-  @media (max-width: 980px) {
-  }
+
   img {
     width: 100%;
     display: block;
+    @media (max-width: 480px) {
+      width: 120px;
+      height: 120px;
+    }
+    @media (max-width: 360px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 `;
 export default Services;

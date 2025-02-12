@@ -51,6 +51,10 @@ const Maindiv = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Heading = styled.div`
   margin-top: 50px;
@@ -82,6 +86,17 @@ const Heading = styled.div`
     @media (max-width: 768px) {
       width: 500px;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
   }
 `;
 const Slide = styled.div`
@@ -95,6 +110,9 @@ const Slide = styled.div`
   @media (max-width: 1280px) {
     padding: 20px;
   }
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 
   p {
     width: 50%;
@@ -104,6 +122,10 @@ const Slide = styled.div`
     @media (max-width: 1280px) {
       font-size: 14px;
     }
+    @media (max-width: 480px) {
+      padding: 20px;
+      width: 80%;
+    }
   }
   div {
     width: 50%;
@@ -112,6 +134,7 @@ const Slide = styled.div`
     small {
     }
   }
+
   background-color: #191a23;
 `;
 export default Testimonials;

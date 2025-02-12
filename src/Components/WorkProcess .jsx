@@ -103,6 +103,10 @@ const Maindiv = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -128,6 +132,12 @@ const Heading = styled.div`
       font-size: 20px;
       margin-right: 10px;
     }
+    @media (max-width: 480px) {
+      width: 70%;
+      height: 100%;
+      display: inline;
+      margin-top: 20px;
+    }
   }
   p {
     font-size: 18px;
@@ -135,6 +145,13 @@ const Heading = styled.div`
     @media (max-width: 1280px) {
       font-size: 14px;
     }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
   }
 `;
 const OptionDiv = styled.div``;
@@ -176,6 +193,11 @@ const Item2 = styled.div`
 
     padding: 41px 60px;
   }
+  @media (max-width: 480px) {
+    height: 40px;
+    padding: 21px 30px;
+    margin-bottom: 20px;
+  }
 `;
 const Item1 = styled.div`
   display: flex;
@@ -187,6 +209,9 @@ const Item1 = styled.div`
   }
   @media (max-width: 768px) {
     border-bottom: none;
+  }
+  @media (max-width: 480px) {
+    height: 50px;
   }
 `;
 const Left = styled.div`
@@ -235,6 +260,12 @@ const Item = styled.div`
   @media (max-width: 768px) {
     height: 50px;
   }
+  @media (max-width: 480px) {
+    height: 40px;
+    padding: 21px 30px;
+    margin-bottom: 20px;
+  }
+
   h1 {
     font-size: 60px;
     font-weight: 500;
@@ -251,6 +282,7 @@ const Item = styled.div`
     font-weight: 500;
     @media (max-width: 768px) {
       font-size: 20px;
+      margin-right: 5px;
     }
   }
 
@@ -269,12 +301,18 @@ const Leftdiv = styled.div`
     @media (max-width: 768px) {
       font-size: 50px;
     }
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
   }
   h4 {
     font-size: 30px;
     font-weight: 500;
     @media (max-width: 768px) {
       font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
     }
   }
 `;
@@ -283,6 +321,10 @@ const RightDiv = styled.div`
   border-radius: 50%;
   padding: 5px;
   img {
+    @media (max-width: 480px) {
+      height: 20px;
+      width: 20px;
+    }
   }
 `;
 

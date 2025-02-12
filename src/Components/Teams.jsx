@@ -16,8 +16,8 @@ function Teams() {
         <Header>
           <h2>Team</h2>
           <p>
-            Meet the skilled and experienced team behind our <br />
-            successful digital marketing strategies
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies
           </p>
         </Header>
 
@@ -190,6 +190,10 @@ const Maindiv = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -210,6 +214,12 @@ const Header = styled.div`
       font-size: 20px;
       margin-right: 10px;
     }
+    @media (max-width: 480px) {
+      width: 30%;
+      height: 100%;
+      display: inline;
+      margin-top: 0px;
+    }
   }
   p {
     font-weight: 400;
@@ -221,6 +231,16 @@ const Header = styled.div`
     @media (max-width: 640px) {
       font-size: 14px;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
   }
 `;
 const UL = styled.div`
@@ -260,6 +280,10 @@ const LI = styled.div`
   @media (max-width: 640px) {
     width: 100%;
     height: 210px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 190px;
   }
 `;
 const TOP = styled.div`
@@ -301,6 +325,10 @@ const Bottom = styled.p`
   @media (max-width: 980px) {
     font-size: 16px;
   }
+  @media (max-width: 480px) {
+    font-size: 12px;
+    width: 100%;
+  }
 `;
 const Button = styled.div`
   margin-bottom: 30px;
@@ -321,6 +349,13 @@ const Button = styled.div`
       padding: 5px 15px;
       height: 50px;
     }
+    @media (max-width: 480px) {
+      width: 50%;
+      height: 40px;
+    }
+  }
+  @media (max-width: 480px) {
+    text-align: center;
   }
 `;
 const Image = styled.div`

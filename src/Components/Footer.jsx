@@ -82,6 +82,11 @@ const Maindiv = styled.div`
     margin-right: 10px;
     position: relative;
   }
+  @media (max-width: 480px) {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 const Header = styled.div`
   height: 30px;
@@ -135,12 +140,21 @@ const Nav = styled.ul`
     @media (max-width: 768px) {
       font-size: 12px;
     }
+    @media (max-width: 480px) {
+      font-size: 16px;
+      text-align: center;
+      margin-right: 30px;
+    }
   }
   @media (max-width: 640px) {
     font-size: 20px;
   }
   @media (max-width: 640px) {
     font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 const Company = styled.div`
@@ -155,6 +169,9 @@ const Company = styled.div`
     position: absolute;
     bottom: 163px;
   }
+  @media (max-width: 480px) {
+    bottom: 213px;
+  }
 `;
 const Contactdiv = styled.div`
   margin-top: 60px;
@@ -166,6 +183,9 @@ const Contactdiv = styled.div`
     flex-direction: column;
     margin-top: 30px;
     text-align: center;
+  }
+  @media (max-width: 480px) {
+    margin-top: 90px;
   }
 `;
 const Leftdiv = styled.div`
@@ -184,6 +204,9 @@ const Leftdiv = styled.div`
     @media (max-width: 640px) {
       font-size: 25px;
     }
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
   p {
     @media (max-width: 1280px) {
@@ -194,6 +217,9 @@ const Leftdiv = styled.div`
     }
     @media (max-width: 640px) {
       font-size: 16px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
     }
   }
 `;
@@ -217,6 +243,9 @@ const Rightdiv = styled.div`
       width: 100%;
       margin-bottom: 30px;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
   input {
     padding: 20px 35px;
@@ -239,6 +268,13 @@ const Rightdiv = styled.div`
       margin-bottom: 20px;
       padding: 20px 35px;
     }
+    @media (max-width: 480px) {
+      width: 145px;
+    }
+    @media (max-width: 360px) {
+      width: 150px;
+      padding: 10px 15px;
+    }
   }
   button {
     background-color: rgb(185, 255, 102);
@@ -260,6 +296,10 @@ const Rightdiv = styled.div`
       width: 100%;
       padding: 20px 35px;
     }
+    @media (max-width: 360px) {
+      width: 100%;
+      padding: 10px 15px;
+    }
   }
 `;
 const FooterDiv = styled.div`
@@ -269,6 +309,9 @@ const FooterDiv = styled.div`
   p {
     padding: 20px 0;
     margin-right: 30px;
+    @media (max-width: 480px) {
+      margin-bottom: 0;
+    }
     &:last-child {
       text-decoration: underline;
     }
@@ -278,6 +321,18 @@ const FooterDiv = styled.div`
     @media (max-width: 980px) {
       font-size: 12px;
     }
+    @media (max-width: 480px) {
+      font-size: 16px;
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 360px) {
+    text-align: center;
   }
 `;
 const LK = styled.div`

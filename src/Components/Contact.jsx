@@ -64,6 +64,10 @@ const Maindiv = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -95,6 +99,13 @@ const Heading = styled.div`
   @media (max-width: 768px) {
     margin-top: 100px;
   }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
 `;
 const ContactDiv = styled.div`
   display: flex;
@@ -106,6 +117,16 @@ const ContactDiv = styled.div`
   @media (max-width: 980px) {
     height: 480px;
     padding: 30px 50px 40px 50px;
+  }
+  @media (max-width: 480px) {
+    width: 230px;
+    height: 400px;
+  }
+  @media (max-width: 360px) {
+    width: 200px;
+    text-align: start;
+    padding: 15px 50px;
+    height: 410px;
   }
 `;
 const LeftDiv = styled.div`
@@ -121,9 +142,22 @@ const LeftDiv = styled.div`
       input {
         border-radius: 50%;
       }
+      @media (max-width: 360px) {
+        width: 100%;
+      }
     }
     @media (max-width: 640px) {
       width: 300px;
+    }
+    @media (max-width: 480px) {
+      width: 250px;
+    }
+    @media (max-width: 360px) {
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
     }
   }
 
@@ -140,6 +174,13 @@ const LeftDiv = styled.div`
     }
     @media (max-width: 640px) {
       width: 290px;
+    }
+    @media (max-width: 480px) {
+      width: 230px;
+    }
+    @media (max-width: 360px) {
+      width: 200px;
+      height: 50px;
     }
   }
 `;
@@ -170,9 +211,20 @@ const Namediv = styled.div`
     @media (max-width: 640px) {
       width: 250px;
     }
+    @media (max-width: 480px) {
+      padding: 9px 15px;
+      width: 200px;
+    }
+    @media (max-width: 360px) {
+      padding: 9px 15px;
+      width: 170px;
+    }
   }
   @media (max-width: 640px) {
     width: 300px;
+  }
+  @media (max-width: 480px) {
+    width: 250px;
   }
 `;
 const Emaildiv = styled.div`
@@ -189,9 +241,20 @@ const Emaildiv = styled.div`
     @media (max-width: 640px) {
       width: 250px;
     }
+    @media (max-width: 480px) {
+      padding: 9px 15px;
+      width: 200px;
+    }
+    @media (max-width: 360px) {
+      padding: 9px 15px;
+      width: 170px;
+    }
   }
   @media (max-width: 640px) {
     width: 300px;
+  }
+  @media (max-width: 480px) {
+    width: 250px;
   }
 `;
 const Messagediv = styled.div`
@@ -212,9 +275,21 @@ const Messagediv = styled.div`
     @media (max-width: 640px) {
       width: 250px;
     }
+    @media (max-width: 480px) {
+      padding: 9px 15px;
+      width: 200px;
+      height: 80px;
+    }
+    @media (max-width: 360px) {
+      padding: 9px 15px;
+      width: 170px;
+    }
   }
   @media (max-width: 640px) {
     width: 300px;
+  }
+  @media (max-width: 480px) {
+    width: 250px;
   }
 `;
 export default Contact;

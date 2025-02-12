@@ -87,6 +87,10 @@ const Mainhead = styled.div`
     margin-left: 10px;
     margin-right: 10px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 const Maincontainer = styled.div`
   margin-top: 60px;
@@ -216,6 +220,11 @@ const Leftcontainer = styled.div`
       width: 100%;
       margin-bottom: 80px;
     }
+    @media (max-width: 480px) {
+      font-size: 30px;
+      width: 100%;
+      margin-bottom: 80px;
+    }
   }
   p {
     width: 498px;
@@ -243,6 +252,10 @@ const Leftcontainer = styled.div`
       width: 100%;
       height: 60px;
     }
+    @media (max-width: 480px) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
   }
   button {
     margin-top: 10px;
@@ -267,6 +280,10 @@ const Leftcontainer = styled.div`
       height: 50px;
     }
     @media (max-width: 640px) {
+      height: 40px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
       height: 40px;
     }
   }
@@ -302,6 +319,7 @@ const Banner = styled.div`
   @media (max-width: 980px) {
     margin-top: 0;
   }
+
   div {
     img {
       @media (max-width: 1280px) {
@@ -311,6 +329,16 @@ const Banner = styled.div`
         width: 60%;
       }
     }
+    @media (max-width: 480px) {
+      width: 28%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 `;
 
