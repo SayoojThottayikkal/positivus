@@ -8,8 +8,8 @@ function Testimonials() {
         <Heading>
           <h2>Testimonials </h2>
           <p>
-            Hear from Our Satisfied Clients: Read Our Testimonials <br /> to
-            Learn More about Our Digital Marketing Services
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
           </p>
         </Heading>
 
@@ -34,7 +34,7 @@ function Testimonials() {
 const Maindiv = styled.div`
   margin-left: 100px;
   margin-right: 100px;
-  height: 100vh;
+
   @media (max-width: 1280px) {
     margin-left: 80px;
     margin-right: 80px;
@@ -43,9 +43,17 @@ const Maindiv = styled.div`
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 const Heading = styled.div`
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -59,12 +67,20 @@ const Heading = styled.div`
     @media (max-width: 1280px) {
       font-size: 30px;
     }
+    @media (max-width: 640px) {
+      font-size: 20px;
+      margin-right: 10px;
+    }
   }
   p {
+    width: 480px;
     font-size: 18px;
     font-weight: 400;
     @media (max-width: 1280px) {
       font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      width: 500px;
     }
   }
 `;

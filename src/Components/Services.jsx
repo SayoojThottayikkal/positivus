@@ -152,6 +152,14 @@ const Maindiv = styled.div`
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -169,6 +177,10 @@ const Header = styled.div`
     @media (max-width: 1280px) {
       font-size: 30px;
     }
+    @media (max-width: 640px) {
+      font-size: 20px;
+      margin-right: 10px;
+    }
   }
   p {
     width: 580px;
@@ -177,6 +189,9 @@ const Header = styled.div`
     font-family: "spaceGroesk_light";
     @media (max-width: 1280px) {
       font-size: 14px;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
     }
   }
 `;
@@ -238,6 +253,14 @@ const Box = styled.div`
     width: 100%;
     height: 180px;
   }
+  @media (max-width: 768px) {
+    height: 160px;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    padding: 30px;
+    height: 180px;
+  }
 `;
 const Leftdiv = styled.div`
   height: 210px;
@@ -262,6 +285,9 @@ const Top = styled.div`
     }
     @media (max-width: 980px) {
       font-size: 30px;
+    }
+    @media (max-width: 640px) {
+      font-size: 20px;
     }
   }
 `;

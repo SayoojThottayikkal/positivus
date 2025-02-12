@@ -69,15 +69,36 @@ const Maindiv = styled.div`
     margin-left: 80px;
     margin-right: 80px;
   }
+  @media (max-width: 980px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
 `;
 const Header = styled.div`
   height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Logo = styled.div`
+  @media (max-width: 980px) {
+    display: flex;
+  }
   img {
     &:first-child {
       margin-right: 8px;
@@ -93,6 +114,10 @@ const Logo = styled.div`
       width: 60.9px;
     }
   }
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 80px;
+  }
 `;
 const Nav = styled.ul`
   display: flex;
@@ -103,6 +128,19 @@ const Nav = styled.ul`
     @media (max-width: 1280px) {
       margin-right: 20px;
     }
+    @media (max-width: 980px) {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
+  @media (max-width: 640px) {
+    font-size: 20px;
   }
 `;
 const Company = styled.div`
@@ -110,12 +148,25 @@ const Company = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 980px) {
+    height: 20px;
+  }
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: 163px;
+  }
 `;
 const Contactdiv = styled.div`
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
 `;
 const Leftdiv = styled.div`
   h4 {
@@ -127,10 +178,22 @@ const Leftdiv = styled.div`
     padding: 0 5px;
     border-radius: 8px;
     margin-bottom: 0;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 640px) {
+      font-size: 25px;
+    }
   }
   p {
     @media (max-width: 1280px) {
       font-size: 14px;
+    }
+    @media (max-width: 980px) {
+      font-size: 12px;
+    }
+    @media (max-width: 640px) {
+      font-size: 16px;
     }
   }
 `;
@@ -142,6 +205,18 @@ const Rightdiv = styled.div`
   @media (max-width: 1280px) {
     display: flex;
     justify-content: center;
+    @media (max-width: 980px) {
+      padding: 58px 20px;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
   input {
     padding: 20px 35px;
@@ -153,6 +228,16 @@ const Rightdiv = styled.div`
     cursor: pointer;
     @media (max-width: 1280px) {
       padding: 5px 10px;
+      width: 150px;
+    }
+    @media (max-width: 768px) {
+      padding: 10px 10px;
+      width: 150px;
+    }
+    @media (max-width: 640px) {
+      width: 76%;
+      margin-bottom: 20px;
+      padding: 20px 35px;
     }
   }
   button {
@@ -162,6 +247,18 @@ const Rightdiv = styled.div`
     cursor: pointer;
     @media (max-width: 1280px) {
       padding: 5px 55px;
+    }
+    @media (max-width: 980px) {
+      width: 150px;
+      padding: 5px 20px;
+    }
+    @media (max-width: 768px) {
+      padding: 10px 20px;
+      width: 170px;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+      padding: 20px 35px;
     }
   }
 `;
@@ -178,6 +275,9 @@ const FooterDiv = styled.div`
     @media (max-width: 1280px) {
       font-size: 14px;
     }
+    @media (max-width: 980px) {
+      font-size: 12px;
+    }
   }
 `;
 const LK = styled.div`
@@ -188,10 +288,26 @@ const LK = styled.div`
   img {
     width: 100%;
     display: block;
+    @media (max-width: 768px) {
+      height: 8px;
+      width: 8px;
+    }
+    @media (max-width: 640px) {
+      height: 20px;
+      width: 20px;
+    }
   }
 `;
 const FB = styled.div`
   img {
+    @media (max-width: 768px) {
+      height: 20px;
+      width: 20px;
+    }
+    @media (max-width: 640px) {
+      height: 30px;
+      width: 30px;
+    }
   }
 `;
 
@@ -203,6 +319,14 @@ const TW = styled.div`
   img {
     width: 100%;
     display: block;
+    @media (max-width: 768px) {
+      height: 8px;
+      width: 8px;
+    }
+    @media (max-width: 640px) {
+      height: 20px;
+      width: 20px;
+    }
   }
 `;
 

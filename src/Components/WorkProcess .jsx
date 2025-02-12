@@ -95,6 +95,14 @@ const Maindiv = styled.div`
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 const Heading = styled.div`
   margin-top: 70px;
@@ -112,6 +120,13 @@ const Heading = styled.div`
     @media (max-width: 1280px) {
       font-size: 30px;
       width: 30%;
+    }
+    @media (max-width: 768px) {
+      width: 35%;
+    }
+    @media (max-width: 640px) {
+      font-size: 20px;
+      margin-right: 10px;
     }
   }
   p {
@@ -138,6 +153,9 @@ const Item2 = styled.div`
     height: 200px;
     padding: 31px 60px;
   }
+  @media (max-width: 640px) {
+    height: 180px;
+  }
 
   p {
     padding: 20px 0;
@@ -148,6 +166,15 @@ const Item2 = styled.div`
       font-size: 12px;
       padding: 10px 0;
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 80px;
+    background-color: #f3f3f3;
+
+    padding: 41px 60px;
   }
 `;
 const Item1 = styled.div`
@@ -158,6 +185,9 @@ const Item1 = styled.div`
   @media (max-width: 980px) {
     margin-bottom: 0;
   }
+  @media (max-width: 768px) {
+    border-bottom: none;
+  }
 `;
 const Left = styled.div`
   display: flex;
@@ -166,10 +196,19 @@ const Left = styled.div`
     font-size: 60px;
     font-weight: 500;
     margin-right: 30px;
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+    @media (max-width: 640px) {
+      font-size: 40px;
+    }
   }
   h4 {
     font-size: 30px;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 const Right = styled.div`
@@ -181,6 +220,7 @@ const Right = styled.div`
   }
 `;
 const Item = styled.div`
+  background-color: #f3f3f3;
   border: 1px solid black;
   height: 80px;
   margin-bottom: 30px;
@@ -192,14 +232,26 @@ const Item = styled.div`
   @media (max-width: 1280px) {
     height: 60px;
   }
+  @media (max-width: 768px) {
+    height: 50px;
+  }
   h1 {
     font-size: 60px;
     font-weight: 500;
     margin-right: 30px;
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+    @media (max-width: 640px) {
+      font-size: 40px;
+    }
   }
   h4 {
     font-size: 30px;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   display: flex;
@@ -214,10 +266,16 @@ const Leftdiv = styled.div`
     font-size: 60px;
     font-weight: 500;
     margin-right: 30px;
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
   }
   h4 {
     font-size: 30px;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 const RightDiv = styled.div`

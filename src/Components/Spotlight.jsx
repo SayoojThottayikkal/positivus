@@ -79,6 +79,14 @@ const Mainhead = styled.div`
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 const Maincontainer = styled.div`
   margin-top: 60px;
@@ -92,6 +100,9 @@ const Maincontainer = styled.div`
   }
   @media (max-width: 980px) {
     margin-top: 30px;
+  }
+  @media (max-width: 640px) {
+    margin-top: 10px;
   }
 `;
 const Imagecontainer = styled.div`
@@ -110,6 +121,12 @@ const Imagecontainer = styled.div`
     height: 36px;
     width: 100%;
     display: block;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+  @media (max-width: 640px) {
+    width: 50%;
   }
 `;
 const Navbarconatiner = styled.div`
@@ -137,9 +154,15 @@ const Navbarconatiner = styled.div`
       @media (max-width: 980px) {
         padding: 5px 10px;
       }
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     @media (max-width: 1280px) {
       margin-right: 20px;
+    }
+    @media (max-width: 640px) {
+      display: none;
     }
   }
 `;
@@ -154,12 +177,19 @@ const Maincontainer1 = styled.div`
     margin-top: 40px;
     height: 400px;
   }
+  @media (max-width: 640px) {
+    position: relative;
+    margin-top: 30px;
+  }
 `;
 const Leftcontainer = styled.div`
   width: 531px;
   height: 481px;
   @media (max-width: 1280px) {
     width: 50%;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
   }
 
   h1 {
@@ -179,6 +209,12 @@ const Leftcontainer = styled.div`
       width: 300px;
       margin-bottom: 0px;
       display: inline-block;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 40px;
+      width: 100%;
+      margin-bottom: 80px;
     }
   }
   p {
@@ -200,6 +236,13 @@ const Leftcontainer = styled.div`
       line-height: 20px;
       margin-top: 0;
     }
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+      height: 60px;
+    }
   }
   button {
     margin-top: 10px;
@@ -218,6 +261,14 @@ const Leftcontainer = styled.div`
       width: 200px;
       margin-top: 0;
     }
+    @media (max-width: 768px) {
+      padding: 5px 5px;
+      width: 150px;
+      height: 50px;
+    }
+    @media (max-width: 640px) {
+      height: 40px;
+    }
   }
 `;
 const Rightcontainer = styled.div`
@@ -230,6 +281,12 @@ const Rightcontainer = styled.div`
   @media (max-width: 980px) {
     width: 600.46px;
     height: 400px;
+  }
+  @media (max-width: 640px) {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 110px;
   }
 
   img {

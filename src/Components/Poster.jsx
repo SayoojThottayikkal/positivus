@@ -81,6 +81,14 @@ const Maindiv = styled.div`
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (max-width: 640px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 const BoxContainer = styled.div`
   background-color: #f3f3f3;
@@ -100,6 +108,9 @@ const BoxContainer = styled.div`
     height: 220px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  @media (max-width: 640px) {
+    text-align: center;
   }
 `;
 const LeftDiv = styled.div`
@@ -149,6 +160,9 @@ const RightDiV = styled.div`
   @media (max-width: 980px) {
     height: 230px;
   }
+  @media (max-width: 640px) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -185,6 +199,10 @@ const HeaderContainer = styled.div`
       font-size: 30px;
       padding: 10px;
     }
+    @media (max-width: 640px) {
+      font-size: 20px;
+      margin-right: 10px;
+    }
   }
   p {
     font-size: 18px;
@@ -205,6 +223,10 @@ const LearnMore = styled.div`
     @media (max-width: 980px) {
       padding: 35px 30px;
     }
+    @media (max-width: 640px) {
+      background-color: white;
+      padding: 0;
+    }
     li {
       width: 286px;
       height: 163px;
@@ -214,9 +236,23 @@ const LearnMore = styled.div`
       @media (max-width: 980px) {
         height: 180px;
       }
+      @media (max-width: 768px) {
+        width: 33%;
+      }
+      @media (max-width: 640px) {
+        background-color: #191a23;
+        padding: 10px;
+        height: 150px;
+        width: 50%;
+        border-radius: 45px;
+        margin-right: 0;
+      }
 
       &:last-child {
         border-right: 0;
+        @media (max-width: 640px) {
+          display: none;
+        }
         p {
         }
       }
@@ -232,6 +268,14 @@ const LearnMore = styled.div`
         @media (max-width: 980px) {
           font-size: 12px;
           line-height: 20px;
+        }
+        @media (max-width: 768px) {
+          font-size: 11px;
+          line-height: 18px;
+        }
+        @media (max-width: 640px) {
+          font-size: 11px;
+          line-height: 16px;
         }
       }
       span {
