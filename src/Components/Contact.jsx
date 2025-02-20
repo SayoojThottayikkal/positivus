@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import pic from "../images/Illustration.png";
+import Title from "./Title";
 
 function Contact() {
   return (
     <>
       <Maindiv>
         <Heading>
-          <h2>Contact Us </h2>
-          <p>
-            Connect with Us: Let's Discuss Your <br /> Digital Marketing Needs
-          </p>
+          <Title
+            heading="Contact Us"
+            discription="Connect with Us: Let's Discuss Your  Digital Marketing Needs"
+          />
         </Heading>
         <ContactDiv>
           <LeftDiv>
@@ -72,40 +73,6 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 70px;
   margin-bottom: 60px;
-  display: flex;
-  align-items: center;
-  height: 51px;
-  h2 {
-    margin-right: 40px;
-    background: #b9ff66;
-    font-size: 40px;
-    padding: 5px;
-    border-radius: 4px;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-  }
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    @media (max-width: 1280px) {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 768px) {
-    margin-top: 100px;
-  }
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-  }
 `;
 const ContactDiv = styled.div`
   display: flex;

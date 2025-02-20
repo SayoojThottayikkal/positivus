@@ -9,135 +9,134 @@ import img6 from "../images/tokyo-volumetric-analytics-of-different-types-in-web
 import icon from "../images/Arrow 1.png";
 import icon2 from "../images/arrow 2.png";
 import styled from "styled-components";
+import Title from "./Title";
 
 function Services() {
   return (
-    <>
-      <Maindiv>
-        <Header>
-          <h2>Services</h2>
-          <p>
-            At our digital marketing agency, we offer a range of services to
-            help businesses grow and succeed online. These services include:
-          </p>
-        </Header>
-        <BoxType>
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3> Search engine</h3>
-                <br />
-                <h3>optimization</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img1} alt="" />
-            </RightDiv>
-          </Box>
+    <Maindiv>
+      <Header>
+        <Title
+          heading="Services"
+          discription="At our digital marketing agency, we offer a range of services to help
+          businesses grow and succeed online. These services include:"
+        />
+      </Header>
+      <BoxType>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3> Search engine</h3>
+              <br />
+              <h3>optimization</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img1} alt="" />
+          </RightDiv>
+        </Box>
 
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3>Pay-per-click</h3>
-                <br />
-                <h3> advertising</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img2} alt="" />
-            </RightDiv>
-          </Box>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3>Pay-per-click</h3>
+              <br />
+              <h3> advertising</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img2} alt="" />
+          </RightDiv>
+        </Box>
 
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3>Social Media</h3>
-                <br />
-                <h3> Marketing</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon2} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img3} alt="" />
-            </RightDiv>
-          </Box>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3>Social Media</h3>
+              <br />
+              <h3> Marketing</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon2} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img3} alt="" />
+          </RightDiv>
+        </Box>
 
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3>Email</h3>
-                <br />
-                <h3>Marketing</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img4} alt="" />
-            </RightDiv>
-          </Box>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3>Email</h3>
+              <br />
+              <h3>Marketing</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img4} alt="" />
+          </RightDiv>
+        </Box>
 
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3>Content</h3>
-                <br />
-                <h3>Creation</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img5} alt="" />
-            </RightDiv>
-          </Box>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3>Content</h3>
+              <br />
+              <h3>Creation</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img5} alt="" />
+          </RightDiv>
+        </Box>
 
-          <Box>
-            <Leftdiv>
-              <Top>
-                <h3>Analytics and</h3>
-                <br />
-                <h3>Tracking</h3>
-              </Top>
-              <Bottom>
-                <p>
-                  <img src={icon2} alt="" />
-                  &nbsp; Learn more
-                </p>
-              </Bottom>
-            </Leftdiv>
-            <RightDiv>
-              <img src={img6} alt="" />
-            </RightDiv>
-          </Box>
-        </BoxType>
-      </Maindiv>
-    </>
+        <Box>
+          <Leftdiv>
+            <Top>
+              <h3>Analytics and</h3>
+              <br />
+              <h3>Tracking</h3>
+            </Top>
+            <Bottom>
+              <a href="">
+                <img src={icon2} alt="" />
+                &nbsp; Learn more
+              </a>
+            </Bottom>
+          </Leftdiv>
+          <RightDiv>
+            <img src={img6} alt="" />
+          </RightDiv>
+        </Box>
+      </BoxType>
+    </Maindiv>
   );
 }
 const Maindiv = styled.div`
@@ -167,48 +166,6 @@ const Maindiv = styled.div`
 `;
 const Header = styled.div`
   margin-top: 60px;
-  display: flex;
-  align-items: center;
-
-  h2 {
-    padding: 7px;
-    background: #b9ff66;
-    margin-right: 40px;
-    font-family: "spaceGroesk_semibold";
-    font-weight: 500;
-    font-size: 40px;
-    border-radius: 6px;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-  }
-  p {
-    width: 580px;
-    font-weight: 400;
-    font-size: 18px;
-    font-family: "spaceGroesk_light";
-    @media (max-width: 1280px) {
-      font-size: 14px;
-    }
-    @media (max-width: 640px) {
-      width: 100%;
-    }
-    @media (max-width: 480px) {
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-  }
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    text-align: center;
-  }
 `;
 const BoxType = styled.div`
   display: flex;
@@ -237,7 +194,7 @@ const Box = styled.div`
     h3 {
       background: white;
     }
-    p {
+    a {
       color: white;
       img {
         background-color: white;
@@ -253,7 +210,7 @@ const Box = styled.div`
   }
   &:nth-child(6) {
     background: #191a23;
-    p {
+    a {
       color: white;
       img {
         background: white;
@@ -323,11 +280,12 @@ const Top = styled.div`
 const Bottom = styled.div`
   width: 164px;
   height: 41px;
-  p {
+  a {
     font-size: 20px;
     font-weight: 400;
     display: flex;
     align-items: center;
+    text-decoration: none;
     @media (max-width: 1280px) {
       font-size: 16px;
     }

@@ -289,21 +289,24 @@ const Leftcontainer = styled.div`
   }
 `;
 const Rightcontainer = styled.div`
-  width: 600.46px;
-  height: 515px;
+  width: 50%;
+  height: 90%;
   @media (max-width: 1280px) {
     width: 50%;
-    height: 600px;
+    height: 100%;
   }
   @media (max-width: 980px) {
-    width: 600.46px;
-    height: 400px;
+    width: 50%;
+    height: 100%;
   }
   @media (max-width: 640px) {
     position: absolute;
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height: 50%;
     top: 110px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
   }
 
   img {

@@ -2,14 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import minus from "../images/-.png";
 import plus from "../images/+.png";
+import Title from "./Title";
 
 function WorkProcess() {
   return (
     <>
       <Maindiv>
         <Heading>
-          <h2>Our Working Process </h2>
-          <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+          <Title
+            heading="Our Working Process"
+            discription="Step-by-Step Guide to Achieving Your Business Goals"
+          />
         </Heading>
         <OptionDiv>
           <Item2>
@@ -111,48 +114,6 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 70px;
   margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  height: 51px;
-  h2 {
-    margin-right: 40px;
-    background: #b9ff66;
-    padding: 5px;
-    font-size: 40px;
-    font-weight: 500;
-    border-radius: 4px;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-      width: 30%;
-    }
-    @media (max-width: 768px) {
-      width: 35%;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-    @media (max-width: 480px) {
-      width: 70%;
-      height: 100%;
-      display: inline;
-      margin-top: 20px;
-    }
-  }
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    @media (max-width: 1280px) {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-  }
 `;
 const OptionDiv = styled.div``;
 const Item2 = styled.div`

@@ -8,17 +8,18 @@ import img3 from "../images/Mask group (3).png";
 import img4 from "../images/Mask group (2).png";
 import img5 from "../images/Mask group (4).png";
 import img6 from "../images/Mask group (5).png";
+import Title from "./Title";
 
 function Teams() {
   return (
     <>
       <Maindiv>
         <Header>
-          <h2>Team</h2>
-          <p>
-            Meet the skilled and experienced team behind our successful digital
-            marketing strategies
-          </p>
+          <Title
+            heading="Team"
+            discription=" Meet the skilled and experienced team behind our successful digital
+            marketing strategies"
+          />
         </Header>
 
         <UL>
@@ -197,51 +198,6 @@ const Maindiv = styled.div`
 `;
 const Header = styled.div`
   margin-top: 60px;
-  display: flex;
-  align-items: center;
-  h2 {
-    padding: 7px;
-    background: #b9ff66;
-    margin-right: 40px;
-    font-family: "spaceGroesk_semibold";
-    font-weight: 500;
-    font-size: 40px;
-    border-radius: 6px;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-    @media (max-width: 480px) {
-      width: 30%;
-      height: 100%;
-      display: inline;
-      margin-top: 0px;
-    }
-  }
-  p {
-    font-weight: 400;
-    font-size: 18px;
-    font-family: "spaceGroesk_light";
-    @media (max-width: 1280px) {
-      font-size: 16px;
-    }
-    @media (max-width: 640px) {
-      font-size: 14px;
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-  }
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-  }
 `;
 const UL = styled.div`
   display: flex;

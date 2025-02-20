@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Title from "./Title";
 
 function Testimonials() {
   return (
     <>
       <Maindiv>
         <Heading>
-          <h2>Testimonials </h2>
-          <p>
-            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
-            about Our Digital Marketing Services
-          </p>
+          <Title
+            heading="Testimonials "
+            discription=" Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services"
+          />
         </Heading>
 
         <Slide>
@@ -59,45 +60,6 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  height: 51px;
-  h2 {
-    margin-right: 40px;
-    background: #b9ff66;
-    font-size: 40px;
-    padding: 5px;
-    border-radius: 4px;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-  }
-  p {
-    width: 480px;
-    font-size: 18px;
-    font-weight: 400;
-    @media (max-width: 1280px) {
-      font-size: 14px;
-    }
-    @media (max-width: 768px) {
-      width: 500px;
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-  }
 `;
 const Slide = styled.div`
   border-radius: 45px;

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import icon from "../images/Arrow 1.png";
 import image from "../images/Frame 19.png";
+import Title from "./Title";
 
 function Poster() {
   return (
@@ -21,11 +22,11 @@ function Poster() {
           </RightDiV>
         </BoxContainer>
         <HeaderContainer>
-          <h2>Case Studies </h2>
-          <p>
-            Explore Real-Life Examples of Our Proven Digital Marketing Success
-            through Our Case Studies
-          </p>
+          <Title
+            heading="Case Studies"
+            discription="Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies"
+          />
         </HeaderContainer>
         <LearnMore>
           <ul>
@@ -186,58 +187,7 @@ const RightDiV = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  display: flex;
-  align-items: center;
   margin-top: 90px;
-  margin-bottom: 60px;
-  @media (max-width: 980px) {
-    margin-top: 45px;
-    margin-bottom: 30px;
-  }
-
-  h2 {
-    border-radius: 4px;
-    margin-right: 40px;
-    background-color: #b9ff66;
-    font-size: 40px;
-    font-weight: 500;
-    height: 51px;
-    padding: 5px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media (max-width: 1280px) {
-      font-size: 30px;
-      padding: 10px;
-    }
-    @media (max-width: 640px) {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-    @media (max-width: 480px) {
-      height: 30px;
-    }
-  }
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    width: 580px;
-    @media (max-width: 1280px) {
-      font-size: 12px;
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-  }
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-
-    text-align: center;
-  }
 `;
 const LearnMore = styled.div`
   ul {
