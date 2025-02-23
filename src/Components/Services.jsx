@@ -166,6 +166,9 @@ const Maindiv = styled.div`
 `;
 const Header = styled.div`
   margin-top: 60px;
+  @media (max-width: 980px) {
+    margin-top: 30px;
+  }
 `;
 const BoxType = styled.div`
   display: flex;

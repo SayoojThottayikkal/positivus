@@ -105,12 +105,12 @@ const BoxContainer = styled.div`
   height: 100%;
   border-radius: 45px;
   @media (max-width: 1280px) {
-    height: 250px;
+    height: 100%;
     padding-left: 30px;
     padding-right: 30px;
   }
   @media (max-width: 980px) {
-    height: 220px;
+    height: 100%;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -168,10 +168,10 @@ const RightDiV = styled.div`
   height: 100%;
   @media (max-width: 1280px) {
     width: 50%;
-    height: 270px;
+    height: 100%;
   }
   @media (max-width: 980px) {
-    height: 230px;
+    height: 100%;
   }
   @media (max-width: 640px) {
     display: none;
@@ -188,6 +188,9 @@ const RightDiV = styled.div`
 
 const HeaderContainer = styled.div`
   margin-top: 90px;
+  @media (max-width: 980px) {
+    margin-top: 30px;
+  }
 `;
 const LearnMore = styled.div`
   ul {

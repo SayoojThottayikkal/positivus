@@ -60,6 +60,10 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
+  @media (max-width: 980px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 `;
 const Slide = styled.div`
   border-radius: 45px;

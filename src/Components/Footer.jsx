@@ -167,10 +167,10 @@ const Company = styled.div`
   }
   @media (max-width: 640px) {
     position: absolute;
-    bottom: 163px;
+    bottom: 160px;
   }
   @media (max-width: 480px) {
-    bottom: 213px;
+    bottom: 210px;
   }
 `;
 const Contactdiv = styled.div`
@@ -241,7 +241,7 @@ const Rightdiv = styled.div`
     }
     @media (max-width: 640px) {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
     @media (max-width: 480px) {
       width: 100%;
@@ -261,18 +261,19 @@ const Rightdiv = styled.div`
     }
     @media (max-width: 768px) {
       padding: 10px 10px;
-      width: 150px;
+      width: 90%;
     }
     @media (max-width: 640px) {
-      width: 85%;
+      width: 80%;
       margin-bottom: 20px;
       padding: 20px 35px;
     }
     @media (max-width: 480px) {
-      width: 80%;
+      width: 73%;
+      margin-right: 0;
     }
     @media (max-width: 360px) {
-      width: 80%;
+      width: 83%;
       padding: 10px 15px;
     }
   }
@@ -286,12 +287,12 @@ const Rightdiv = styled.div`
       width: 50%;
     }
     @media (max-width: 980px) {
-      width: 150px;
+      width: 50%;
       padding: 5px 20px;
     }
     @media (max-width: 768px) {
       padding: 10px 20px;
-      width: 170px;
+      width: 100%;
     }
     @media (max-width: 640px) {
       width: 100%;
@@ -322,6 +323,7 @@ const FooterDiv = styled.div`
     @media (max-width: 980px) {
       font-size: 12px;
     }
+
     @media (max-width: 480px) {
       font-size: 16px;
       width: 100%;

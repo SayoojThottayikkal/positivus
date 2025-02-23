@@ -73,6 +73,10 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 70px;
   margin-bottom: 60px;
+  @media (max-width: 980px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 `;
 const ContactDiv = styled.div`
   display: flex;

@@ -114,6 +114,10 @@ const Maindiv = styled.div`
 const Heading = styled.div`
   margin-top: 70px;
   margin-bottom: 50px;
+  @media (max-width: 980px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 `;
 const OptionDiv = styled.div``;
 const Item2 = styled.div`
