@@ -36,10 +36,10 @@ function Poster() {
                 that resulted in a 50% increase in website traffic and a 25%
                 increase in sales.
               </p>
-              <span>
+              <a href="">
                 Learn more &nbsp;
                 <img src={icon} alt="" />
-              </span>
+              </a>
             </li>
 
             <li>
@@ -48,10 +48,10 @@ function Poster() {
                 resulted in a first page ranking for key keywords and a 200%
                 increase in organic traffic.
               </p>
-              <span>
+              <a href="">
                 Learn more &nbsp;
                 <img src={icon} alt="" />
-              </span>
+              </a>
             </li>
 
             <li>
@@ -60,10 +60,10 @@ function Poster() {
                 campaign that increased followers by 25% and generated a 20%
                 increase in online sales.
               </p>
-              <span>
+              <a href="">
                 Learn more &nbsp;
                 <img src={icon} alt="" />
-              </span>
+              </a>
             </li>
           </ul>
         </LearnMore>
@@ -102,7 +102,7 @@ const BoxContainer = styled.div`
   align-items: center;
   padding-left: 60px;
   padding-right: 60px;
-  height: 347px;
+  height: 100%;
   border-radius: 45px;
   @media (max-width: 1280px) {
     height: 250px;
@@ -165,7 +165,7 @@ const LeftDiv = styled.div`
   }
 `;
 const RightDiV = styled.div`
-  height: 394px;
+  height: 100%;
   @media (max-width: 1280px) {
     width: 50%;
     height: 270px;
@@ -272,9 +272,13 @@ const LearnMore = styled.div`
       font-size: 12px;
     }
   }
-  span {
+  a {
     text-align: center;
+    text-decoration: none;
     color: #b9ff66;
+    &:hover {
+      color: #64b007;
+    }
     @media (max-width: 1280px) {
       font-size: 14px;
       margin-left: 20px;
@@ -283,6 +287,7 @@ const LearnMore = styled.div`
     img {
       height: 15px;
       width: 15px;
+
       @media (max-width: 1280px) {
         width: 10px;
         height: 10px;

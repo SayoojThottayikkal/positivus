@@ -218,7 +218,7 @@ const Box = styled.div`
     }
   }
   @media (max-width: 1280px) {
-    width: 33%;
+    width: 35%;
     height: 150px;
   }
   @media (max-width: 980px) {
@@ -234,12 +234,13 @@ const Box = styled.div`
     height: 180px;
   }
   @media (max-width: 480px) {
-    width: 265px;
+    width: 80%;
+
     height: 130px;
     margin-top: 20px;
   }
   @media (max-width: 360px) {
-    width: 245px;
+    width: 80%;
   }
 `;
 const Leftdiv = styled.div`

@@ -26,5 +26,50 @@ const Div = styled.div`
     font-size: 18px;
     font-weight: 400;
   }
+  @media (max-width: 1280px) {
+    h2 {
+    }
+    p {
+    }
+  }
+  @media (max-width: 980px) {
+    h2 {
+      font-size: 36px;
+      margin-right: 20px;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+    }
+    p {
+    }
+  }
+  @media (max-width: 480px) {
+    h2 {
+    }
+    p {
+    }
+  }
+  @media (max-width: 360px) {
+    h2 {
+    }
+    p {
+    }
+  }
 `;
 export default Title;

@@ -15,14 +15,14 @@ function Contact() {
         </Heading>
         <ContactDiv>
           <LeftDiv>
-            <ul>
-              <li>
-                <input type="checkbox" name="" id="" /> Say Hi
-              </li>
-              <li>
-                <input type="checkbox" name="" id="" /> Get a Quote
-              </li>
-            </ul>
+            <Div>
+              <div>
+                <label htmlFor=""> </label> Say Hi
+              </div>
+              <div>
+                <label htmlFor=""></label> Get a Quote
+              </div>
+            </Div>
 
             <Namediv>
               Name <br />
@@ -80,54 +80,25 @@ const ContactDiv = styled.div`
   background-color: #f3f3f3;
   padding: 60px 100px 80px 100px;
   border-radius: 45px;
-  height: 500px;
+  height: 100%;
+  @media (max-width: 1280px) {
+    padding: 30px;
+  }
   @media (max-width: 980px) {
-    height: 480px;
     padding: 30px 50px 40px 50px;
   }
   @media (max-width: 480px) {
-    width: 230px;
-    height: 400px;
+    width: 75%;
+    height: 100%;
   }
   @media (max-width: 360px) {
-    width: 200px;
+    width: 70%;
     text-align: start;
     padding: 15px 50px;
-    height: 410px;
+    height: 100%;
   }
 `;
-const LeftDiv = styled.div`
-  div {
-  }
-  ul {
-    display: flex;
-    li {
-      &:first-child {
-        margin-left: 0;
-      }
-      margin-right: 20px;
-      input {
-        border-radius: 50%;
-      }
-      @media (max-width: 360px) {
-        width: 100%;
-      }
-    }
-    @media (max-width: 640px) {
-      width: 300px;
-    }
-    @media (max-width: 480px) {
-      width: 250px;
-    }
-    @media (max-width: 360px) {
-      width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-    }
-  }
-
+const LeftDiv = styled.form`
   button {
     background-color: #191a23;
     padding: 20px 35px 20px 35px;
@@ -137,18 +108,18 @@ const LeftDiv = styled.div`
 
     height: 68px;
     @media (max-width: 1280px) {
-      width: 80%;
-    }
-    @media (max-width: 640px) {
-      width: 290px;
+      width: 100%;
     }
     @media (max-width: 480px) {
-      width: 230px;
+      width: 100%;
+      padding: 10px 20px;
     }
-    @media (max-width: 360px) {
-      width: 200px;
-      height: 50px;
-    }
+  }
+  @media (max-width: 1280px) {
+    width: 70%;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
   }
 `;
 const RightDiv = styled.div`
@@ -159,104 +130,130 @@ const RightDiv = styled.div`
     right: -340px;
     height: 500px;
     display: block;
-    @media (max-width: 1280px) {
-      display: none;
-    }
+  }
+  @media (max-width: 1280px) {
+    display: none;
   }
 `;
 const Namediv = styled.div`
-  width: 556px;
+  width: 100%;
   margin-bottom: 20px;
 
   input {
     width: 500px;
     border-radius: 14px;
-    padding: 18px 30px 18px 30px;
+    padding: 20px;
     @media (max-width: 1280px) {
-      width: 70%;
+      width: 100%;
     }
     @media (max-width: 640px) {
-      width: 250px;
+      width: 100%;
     }
     @media (max-width: 480px) {
       padding: 9px 15px;
-      width: 200px;
+      width: 100%;
     }
     @media (max-width: 360px) {
       padding: 9px 15px;
-      width: 170px;
+      width: 100%;
     }
   }
   @media (max-width: 640px) {
-    width: 300px;
+    width: 100%;
   }
   @media (max-width: 480px) {
-    width: 250px;
+    width: 100%;
   }
 `;
 const Emaildiv = styled.div`
-  width: 556px;
+  width: 100%;
   margin-bottom: 20px;
 
   input {
     width: 500px;
     border-radius: 14px;
-    padding: 18px 30px 18px 30px;
+    padding: 20px;
     @media (max-width: 1280px) {
-      width: 70%;
+      width: 100%;
     }
     @media (max-width: 640px) {
-      width: 250px;
+      width: 100%;
     }
     @media (max-width: 480px) {
       padding: 9px 15px;
-      width: 200px;
+      width: 100%;
     }
     @media (max-width: 360px) {
       padding: 9px 15px;
-      width: 170px;
+      width: 100%;
     }
   }
   @media (max-width: 640px) {
-    width: 300px;
+    width: 100%;
   }
   @media (max-width: 480px) {
-    width: 250px;
+    width: 100%;
   }
 `;
 const Messagediv = styled.div`
-  width: 556px;
+  width: 100%;
   margin-bottom: 20px;
 
   Textarea {
-    width: 500px;
+    width: 90%;
     height: 170px;
     border-radius: 14px;
-    padding: 18px 30px 18px 30px;
+    padding: 20px;
     @media (max-width: 1280px) {
-      width: 70%;
+      width: 100%;
     }
     @media (max-width: 980px) {
-      height: 100px;
+      width: 100%;
+      height: 120px;
     }
     @media (max-width: 640px) {
-      width: 250px;
+      width: 100%;
     }
     @media (max-width: 480px) {
       padding: 9px 15px;
-      width: 200px;
-      height: 80px;
+      width: 100%;
+      width: 100%;
     }
     @media (max-width: 360px) {
       padding: 9px 15px;
-      width: 170px;
+      width: 100%;
     }
   }
   @media (max-width: 640px) {
-    width: 300px;
+    width: 100%;
   }
   @media (max-width: 480px) {
-    width: 250px;
+    width: 100%;
+  }
+`;
+const Div = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: 20px;
+  div {
+    margin-right: 40px;
+    label {
+      margin-right: 10px;
+      padding-top: 2px;
+      padding-left: 8px;
+      padding-right: 8px;
+      border: 1px solid black;
+      border-radius: 50%;
+      &:first-child {
+        &:hover {
+          background-color: #b9ff66;
+        }
+      }
+    }
+    @media (max-width: 360px) {
+      margin-right: 20px;
+    }
   }
 `;
 export default Contact;

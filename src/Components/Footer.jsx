@@ -257,22 +257,22 @@ const Rightdiv = styled.div`
     cursor: pointer;
     @media (max-width: 1280px) {
       padding: 5px 10px;
-      width: 150px;
+      width: 50%;
     }
     @media (max-width: 768px) {
       padding: 10px 10px;
       width: 150px;
     }
     @media (max-width: 640px) {
-      width: 76%;
+      width: 85%;
       margin-bottom: 20px;
       padding: 20px 35px;
     }
     @media (max-width: 480px) {
-      width: 145px;
+      width: 80%;
     }
     @media (max-width: 360px) {
-      width: 150px;
+      width: 80%;
       padding: 10px 15px;
     }
   }
@@ -283,6 +283,7 @@ const Rightdiv = styled.div`
     cursor: pointer;
     @media (max-width: 1280px) {
       padding: 5px 55px;
+      width: 50%;
     }
     @media (max-width: 980px) {
       width: 150px;
