@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import dark from "../images/Vector.png";
 import icon from "../images/linkedin (1).png";
@@ -9,11 +9,56 @@ import img4 from "../images/Mask group (2).png";
 import img5 from "../images/Mask group (4).png";
 import img6 from "../images/Mask group (5).png";
 import Title from "./Title";
+import "../App.css";
 
 function Teams() {
+  const [data, setdata] = useState([
+    {
+      image: img2,
+      name: "John Smith",
+      position: "CEO and Founder",
+      description:
+        "10+ years of experience in digital marketing. Expertise in SEO,PPC and content strategy",
+    },
+    {
+      image: img1,
+      name: "Jane Doe",
+      position: "Director of Operations",
+      description:
+        "7+ years of experience in project management and team leadership.Strong organizational and communication skills",
+    },
+    {
+      image: img4,
+      name: "Michael Brown",
+      position: "Senior SEO Specialist",
+      description:
+        " 5+ years of experience in SEO and content creation. Proficient in  keyword research and on-page optimization",
+    },
+    {
+      image: img3,
+      name: "Emily Johnson",
+      position: "PPC Manager",
+      description:
+        " 3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    },
+    {
+      image: img5,
+      name: "Brian Williams",
+      position: "Social Media Specialist",
+      description:
+        "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
+    },
+    {
+      image: img6,
+      name: "Sarah Kim",
+      position: "Content Creator",
+      description:
+        "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries",
+    },
+  ]);
   return (
     <>
-      <Maindiv>
+      <Maindiv className="wrapper">
         <Header>
           <Title
             heading="Team"
@@ -23,146 +68,28 @@ function Teams() {
         </Header>
 
         <UL>
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img2} alt="" />
-                </Image>
+          {data.map((item) => (
+            <LI>
+              <TOP>
+                <div>
+                  <Image>
+                    <img src={dark} alt="" />
+                    <img src={item.image} alt="" />
+                  </Image>
 
-                <span>
-                  <h4>John Smith</h4>
-                  <p>CEO and Founder</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </Bottom>
-          </LI>
-
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img1} alt="" />
-                </Image>
-                <span>
-                  <h4>Jane Doe</h4>
-                  <p>Director of Operations</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              7+ years of experience in project management and team leadership.
-              Strong organizational and communication skills
-            </Bottom>
-          </LI>
-
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img4} alt="" />
-                </Image>
-                <span>
-                  <h4>Michael Brown</h4>
-                  <p>Senior SEO Specialist</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              5+ years of experience in SEO and content creation. Proficient in
-              keyword research and on-page optimization
-            </Bottom>
-          </LI>
-
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img3} alt="" />
-                </Image>
-                <span>
-                  <h4>Emily Johnson</h4>
-                  <p>PPC Manager</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              3+ years of experience in paid search advertising. Skilled in
-              campaign management and performance analysis
-            </Bottom>
-          </LI>
-
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img5} alt="" />
-                </Image>
-                <span>
-                  <h4>Brian Williams</h4>
-                  <p>Social Media Specialist</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              4+ years of experience in social media marketing. Proficient in
-              creating and scheduling content, analyzing metrics, and building
-              engagement
-            </Bottom>
-          </LI>
-
-          <LI>
-            <TOP>
-              <div>
-                <Image>
-                  <img src={dark} alt="" />
-                  <img src={img6} alt="" />
-                </Image>
-
-                <span>
-                  <h4>Sarah Kim</h4>
-                  <p>Content Creator</p>
-                </span>
-              </div>
-              <small>
-                <img src={icon} alt="" />
-              </small>
-            </TOP>
-            <Border></Border>
-            <Bottom>
-              2+ years of experience in writing and editing Skilled in creating
-              compelling, SEO-optimized content for various industries
-            </Bottom>
-          </LI>
+                  <span>
+                    <h4>{item.name}</h4>
+                    <p>{item.position}</p>
+                  </span>
+                </div>
+                <small>
+                  <img src={icon} alt="" />
+                </small>
+              </TOP>
+              <Border></Border>
+              <Bottom>{item.description}</Bottom>
+            </LI>
+          ))}
         </UL>
 
         <Button>
@@ -172,30 +99,7 @@ function Teams() {
     </>
   );
 }
-const Maindiv = styled.div`
-  margin-left: 100px;
-  margin-right: 100px;
-  @media (max-width: 1280px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  @media (max-width: 980px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (max-width: 768px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  @media (max-width: 640px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  @media (max-width: 480px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-`;
+const Maindiv = styled.div``;
 const Header = styled.div`
   margin-top: 60px;
   @media (max-width: 980px) {

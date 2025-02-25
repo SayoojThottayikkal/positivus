@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import img1 from "../images/tokyo-magnifier-web-search-with-elements 2.png";
 import img2 from "../images/tokyo-selecting-a-value-in-the-browser-window 1.jpg";
@@ -12,8 +12,18 @@ import styled from "styled-components";
 import Title from "./Title";
 
 function Services() {
+  const [data, setData] = useState([
+    { title: "Search engine ", title1: "optimization", image: img1 },
+    { title: "Pay-per-click ", title1: "advertising", image: img2 },
+    { title: "Social Media ", title1: "Marketing", image: img3 },
+    { title: "Email ", title1: "Marketing", image: img4 },
+    { title: "Content ", title1: "Creation", image: img5 },
+    { title: "Analytics and ", title1: "Tracking", image: img6 },
+  ]);
+  console.log(data, "data");
+
   return (
-    <Maindiv>
+    <Maindiv className="wrapper">
       <Header>
         <Title
           heading="Services"
@@ -22,147 +32,32 @@ function Services() {
         />
       </Header>
       <BoxType>
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3> Search engine</h3>
-              <br />
-              <h3>optimization</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img1} alt="" />
-          </RightDiv>
-        </Box>
-
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3>Pay-per-click</h3>
-              <br />
-              <h3> advertising</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img2} alt="" />
-          </RightDiv>
-        </Box>
-
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3>Social Media</h3>
-              <br />
-              <h3> Marketing</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon2} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img3} alt="" />
-          </RightDiv>
-        </Box>
-
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3>Email</h3>
-              <br />
-              <h3>Marketing</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img4} alt="" />
-          </RightDiv>
-        </Box>
-
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3>Content</h3>
-              <br />
-              <h3>Creation</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img5} alt="" />
-          </RightDiv>
-        </Box>
-
-        <Box>
-          <Leftdiv>
-            <Top>
-              <h3>Analytics and</h3>
-              <br />
-              <h3>Tracking</h3>
-            </Top>
-            <Bottom>
-              <a href="">
-                <img src={icon2} alt="" />
-                &nbsp; Learn more
-              </a>
-            </Bottom>
-          </Leftdiv>
-          <RightDiv>
-            <img src={img6} alt="" />
-          </RightDiv>
-        </Box>
+        {data.map((item) => (
+          <Box>
+            <Leftdiv>
+              <Top>
+                <h3>{item.title}</h3>
+                <br />
+                <h3>{item.title1}</h3>
+              </Top>
+              <Bottom>
+                <a href="">
+                  <img src={icon} alt="" />
+                  &nbsp; Learn more
+                </a>
+              </Bottom>
+            </Leftdiv>
+            <RightDiv>
+              <img src={item.image} alt="" />
+            </RightDiv>
+          </Box>
+        ))}
       </BoxType>
     </Maindiv>
   );
 }
 const Maindiv = styled.div`
-  margin-left: 100px;
-  margin-right: 100px;
   margin-bottom: 90px;
-  @media (max-width: 1280px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  @media (max-width: 980px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (max-width: 768px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  @media (max-width: 640px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  @media (max-width: 480px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
 `;
 const Header = styled.div`
   margin-top: 60px;
@@ -262,6 +157,7 @@ const Top = styled.div`
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 8px;
+
     font-size: 30px;
     font-weight: 500;
     @media (max-width: 1280px) {

@@ -5,6 +5,7 @@ import logo1 from "../images/Positivus.png";
 import linkedin from "../images/linkedin.png";
 import facebook from "../images/Social icon.png";
 import twitter from "../images/twitter (1).png";
+import "../App.css";
 
 function Footer() {
   return (

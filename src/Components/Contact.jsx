@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import pic from "../images/Illustration.png";
 import Title from "./Title";
+import "../App.css";
 
 function Contact() {
   return (
     <>
-      <Maindiv>
+      <Maindiv className="wrapper">
         <Heading>
           <Title
             heading="Contact Us"
@@ -46,30 +47,7 @@ function Contact() {
     </>
   );
 }
-const Maindiv = styled.div`
-  margin-left: 100px;
-  margin-right: 100px;
-  @media (max-width: 1280px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  @media (max-width: 980px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (max-width: 768px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  @media (max-width: 640px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  @media (max-width: 480px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-`;
+const Maindiv = styled.div``;
 const Heading = styled.div`
   margin-top: 70px;
   margin-bottom: 60px;
