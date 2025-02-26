@@ -4,8 +4,15 @@ import minus from "../images/-.png";
 import plus from "../images/+.png";
 import Title from "./Title";
 import "../App.css";
+import { useState } from "react";
 
 function WorkProcess() {
+  const [paragraph, setParagraph] = useState(false);
+
+  const handleClick = () => {
+    setParagraph(!paragraph);
+  };
+
   return (
     <>
       <Maindiv className="wrapper">
@@ -24,15 +31,19 @@ function WorkProcess() {
               </Left>
 
               <Right>
-                <img src={minus} alt="" />
+                <button onClick={handleClick}>
+                  <img src={plus} alt="" />
+                </button>
               </Right>
             </Item1>
-            <p>
-              During the initial consultation, we will discuss your business
-              goals and objectives, target audience, and current marketing
-              efforts. This will allow us to understand your needs and tailor
-              our services to best fit your requirements.
-            </p>
+            {paragraph && (
+              <p>
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </p>
+            )}
           </Item2>
 
           <Item>
@@ -41,7 +52,9 @@ function WorkProcess() {
               <h4>Research and Strategy Development</h4>
             </Leftdiv>
             <RightDiv>
-              <img src={plus} alt="" />
+              <button onClick={handleClick}>
+                <img src={plus} alt="" />
+              </button>
             </RightDiv>
           </Item>
 
@@ -51,7 +64,9 @@ function WorkProcess() {
               <h4>Implementation</h4>
             </Leftdiv>
             <RightDiv>
-              <img src={plus} alt="" />
+              <button>
+                <img src={plus} alt="" />
+              </button>
             </RightDiv>
           </Item>
 
@@ -61,7 +76,9 @@ function WorkProcess() {
               <h4>Monitoring and Optimization</h4>
             </Leftdiv>
             <RightDiv>
-              <img src={plus} alt="" />
+              <button>
+                <img src={plus} alt="" />
+              </button>
             </RightDiv>
           </Item>
 
@@ -71,7 +88,9 @@ function WorkProcess() {
               <h4>Reporting and Communication</h4>
             </Leftdiv>
             <RightDiv>
-              <img src={plus} alt="" />
+              <button>
+                <img src={plus} alt="" />
+              </button>
             </RightDiv>
           </Item>
           <Item>
@@ -80,7 +99,9 @@ function WorkProcess() {
               <h4>Continual Improvement</h4>
             </Leftdiv>
             <RightDiv>
-              <img src={plus} alt="" />
+              <button>
+                <img src={plus} alt="" />
+              </button>
             </RightDiv>
           </Item>
         </OptionDiv>
@@ -100,24 +121,29 @@ const Heading = styled.div`
 const OptionDiv = styled.div``;
 const Item2 = styled.div`
   border: 1px solid black;
-  height: 250px;
+  height: 100%;
   margin-bottom: 30px;
   padding: 41px 60px;
   border-radius: 45px;
   box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 5);
-  background: #b9ff66;
+  &:hover {
+    background: #b9ff66;
+  }
+
   @media (max-width: 1280px) {
-    height: 210px;
+    height: 100%;
   }
   @media (max-width: 980px) {
-    height: 200px;
+    height: 100%;
+
     padding: 31px 60px;
   }
   @media (max-width: 640px) {
-    height: 180px;
+    height: 100%;
   }
 
   p {
+    border-top: 1px solid black;
     padding: 20px 0;
     @media (max-width: 1280px) {
       font-size: 14px;
@@ -127,17 +153,22 @@ const Item2 = styled.div`
       padding: 10px 0;
     }
     @media (max-width: 768px) {
-      display: none;
+      font-size: 10px;
+      padding: 5px;
+    }
+    @media (max-width: 640px) {
+      font-size: 8px;
     }
   }
   @media (max-width: 768px) {
-    height: 80px;
+    height: 100%;
     background-color: #f3f3f3;
 
     padding: 41px 60px;
   }
   @media (max-width: 480px) {
-    height: 40px;
+    height: 100%;
+
     padding: 21px 30px;
     margin-bottom: 20px;
   }
@@ -146,7 +177,7 @@ const Item1 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+
   @media (max-width: 980px) {
     margin-bottom: 0;
   }
@@ -180,11 +211,17 @@ const Left = styled.div`
   }
 `;
 const Right = styled.div`
-  border: 1px solid black;
-  border-radius: 50%;
-  background: white;
-  padding: 8px;
-  img {
+  button {
+    border-radius: 50%;
+    padding: 8px;
+    img {
+      width: 100%;
+      display: block;
+      @media (max-width: 480px) {
+        height: 20px;
+        width: 20px;
+      }
+    }
   }
 `;
 const Item = styled.div`
@@ -260,14 +297,16 @@ const Leftdiv = styled.div`
   }
 `;
 const RightDiv = styled.div`
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 8px;
-
-  img {
-    @media (max-width: 480px) {
-      height: 20px;
-      width: 20px;
+  button {
+    border-radius: 50%;
+    padding: 8px;
+    img {
+      width: 100%;
+      display: block;
+      @media (max-width: 480px) {
+        height: 20px;
+        width: 20px;
+      }
     }
   }
 `;

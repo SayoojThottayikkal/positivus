@@ -181,6 +181,7 @@ const Bottom = styled.div`
   width: 164px;
   height: 41px;
   a {
+    color: black;
     font-size: 20px;
     font-weight: 400;
     display: flex;
