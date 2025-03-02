@@ -57,46 +57,44 @@ function Teams() {
     },
   ]);
   return (
-    <>
-      <Maindiv className="wrapper">
-        <Header>
-          <Title
-            heading="Team"
-            discription=" Meet the skilled and experienced team behind our successful digital
+    <Maindiv className="wrapper">
+      <Header>
+        <Title
+          heading="Team"
+          discription=" Meet the skilled and experienced team behind our successful digital
             marketing strategies"
-          />
-        </Header>
+        />
+      </Header>
 
-        <UL>
-          {data.map((item) => (
-            <LI>
-              <TOP>
-                <div>
-                  <Image>
-                    <img src={dark} alt="" />
-                    <img src={item.image} alt="" />
-                  </Image>
+      <UL>
+        {data.map((item) => (
+          <LI>
+            <TOP>
+              <div>
+                <Image>
+                  <img src={dark} alt="" />
+                  <img src={item.image} alt="" />
+                </Image>
 
-                  <span>
-                    <h4>{item.name}</h4>
-                    <p>{item.position}</p>
-                  </span>
-                </div>
-                <small>
-                  <img src={icon} alt="" />
-                </small>
-              </TOP>
-              <Border></Border>
-              <Bottom>{item.description}</Bottom>
-            </LI>
-          ))}
-        </UL>
+                <span>
+                  <h4>{item.name}</h4>
+                  <p>{item.position}</p>
+                </span>
+              </div>
+              <small>
+                <img src={icon} alt="" />
+              </small>
+            </TOP>
+            <Border></Border>
+            <Bottom>{item.description}</Bottom>
+          </LI>
+        ))}
+      </UL>
 
-        <Button>
-          <button>See all team</button>
-        </Button>
-      </Maindiv>
-    </>
+      <Button>
+        <button>See all team</button>
+      </Button>
+    </Maindiv>
   );
 }
 const Maindiv = styled.div``;

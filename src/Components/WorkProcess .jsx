@@ -1,112 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import minus from "../images/-.png";
 import plus from "../images/+.png";
 import Title from "./Title";
 import "../App.css";
 import { useState } from "react";
+import { workprocess } from "../utils/commonArray";
 
 function WorkProcess() {
-  const [paragraph, setParagraph] = useState(false);
+  const [paragraph, setParagraph] = useState(0);
 
-  const handleClick = () => {
-    setParagraph(!paragraph);
+  const handleClick = (index) => {
+    setParagraph(index);
   };
 
   return (
-    <>
-      <Maindiv className="wrapper">
-        <Heading>
-          <Title
-            heading="Our Working Process"
-            discription="Step-by-Step Guide to Achieving Your Business Goals"
-          />
-        </Heading>
-        <OptionDiv>
-          <Item2>
+    <Maindiv className="wrapper">
+      <Heading>
+        <Title
+          heading="Our Working Process"
+          discription="Step-by-Step Guide to Achieving Your Business Goals"
+        />
+      </Heading>
+      <OptionDiv>
+        {workprocess.map((item, index) => (
+          <Item2 key={index}>
             <Item1>
               <Left>
-                <h1>01</h1>
-                <h4>Consultation</h4>
+                <h1>{index + 1}</h1>
+                <h4>{item.title}</h4>
               </Left>
 
               <Right>
-                <button onClick={handleClick}>
+                <button onClick={() => handleClick(index)}>
                   <img src={plus} alt="" />
                 </button>
               </Right>
             </Item1>
-            {paragraph && (
-              <p>
-                During the initial consultation, we will discuss your business
-                goals and objectives, target audience, and current marketing
-                efforts. This will allow us to understand your needs and tailor
-                our services to best fit your requirements.
-              </p>
-            )}
+            {paragraph == index && <p>{item.description}</p>}
           </Item2>
-
-          <Item>
-            <Leftdiv>
-              <h1>02</h1>
-              <h4>Research and Strategy Development</h4>
-            </Leftdiv>
-            <RightDiv>
-              <button onClick={handleClick}>
-                <img src={plus} alt="" />
-              </button>
-            </RightDiv>
-          </Item>
-
-          <Item>
-            <Leftdiv>
-              <h1>03</h1>
-              <h4>Implementation</h4>
-            </Leftdiv>
-            <RightDiv>
-              <button>
-                <img src={plus} alt="" />
-              </button>
-            </RightDiv>
-          </Item>
-
-          <Item>
-            <Leftdiv>
-              <h1>04</h1>
-              <h4>Monitoring and Optimization</h4>
-            </Leftdiv>
-            <RightDiv>
-              <button>
-                <img src={plus} alt="" />
-              </button>
-            </RightDiv>
-          </Item>
-
-          <Item>
-            <Leftdiv>
-              <h1>05</h1>
-              <h4>Reporting and Communication</h4>
-            </Leftdiv>
-            <RightDiv>
-              <button>
-                <img src={plus} alt="" />
-              </button>
-            </RightDiv>
-          </Item>
-          <Item>
-            <Leftdiv>
-              <h1>06</h1>
-              <h4>Continual Improvement</h4>
-            </Leftdiv>
-            <RightDiv>
-              <button>
-                <img src={plus} alt="" />
-              </button>
-            </RightDiv>
-          </Item>
-        </OptionDiv>
-      </Maindiv>
-    </>
+        ))}
+      </OptionDiv>
+    </Maindiv>
   );
 }
 const Maindiv = styled.div``;

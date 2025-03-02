@@ -9,52 +9,50 @@ import "../App.css";
 
 function Footer() {
   return (
-    <>
-      <Maindiv>
-        <Header>
-          <Logo>
-            <img src={logo} alt="" />
-            <img src={logo1} alt="" />
-          </Logo>
-          <Nav>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Use Cases</li>
-            <li>Pricing</li>
-            <li>Blog</li>
-          </Nav>
-          <Company>
-            <LK>
-              <img src={linkedin} alt="" />
-            </LK>
-            <FB>
-              <img src={facebook} alt="" />
-            </FB>
-            <TW>
-              <img src={twitter} alt="" />
-            </TW>
-          </Company>
-        </Header>
-        <Contactdiv>
-          <Leftdiv>
-            <h4>Contact us:</h4>
-            <p>Email: info@positivus.com</p>
-            <p>Phone: 555-567-8901</p>
-            <p>
-              Address: 1234 Main St <br /> Moonstone City, Stardust State 12345
-            </p>
-          </Leftdiv>
-          <Rightdiv>
-            <input type="email" placeholder="Email" />
-            <button>Subscribe to news</button>
-          </Rightdiv>
-        </Contactdiv>
-        <FooterDiv>
-          <p>© 2023 Positivus. All Rights Reserved.</p>
-          <p>Privacy Policy</p>
-        </FooterDiv>
-      </Maindiv>
-    </>
+    <Maindiv>
+      <Header>
+        <Logo>
+          <img src={logo} alt="" />
+          <img src={logo1} alt="" />
+        </Logo>
+        <Nav>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Use Cases</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+        </Nav>
+        <Company>
+          <LK>
+            <img src={linkedin} alt="" />
+          </LK>
+          <FB>
+            <img src={facebook} alt="" />
+          </FB>
+          <TW>
+            <img src={twitter} alt="" />
+          </TW>
+        </Company>
+      </Header>
+      <Contactdiv>
+        <Leftdiv>
+          <h4>Contact us:</h4>
+          <p>Email: info@positivus.com</p>
+          <p>Phone: 555-567-8901</p>
+          <p>
+            Address: 1234 Main St <br /> Moonstone City, Stardust State 12345
+          </p>
+        </Leftdiv>
+        <Rightdiv>
+          <input type="email" placeholder="Email" />
+          <button>Subscribe to news</button>
+        </Rightdiv>
+      </Contactdiv>
+      <FooterDiv>
+        <p>© 2023 Positivus. All Rights Reserved.</p>
+        <p>Privacy Policy</p>
+      </FooterDiv>
+    </Maindiv>
   );
 }
 const Maindiv = styled.div`

@@ -4,23 +4,23 @@ ol {
 }
 @font-face {
   font-family: "spaceGroesk";
-  src: url("./Fonts/SpaceGrotesk-Regular.woff") format("woff2");
+  src: url("./fonts/SpaceGrotesk-Regular.woff") format("woff2");
 }
 @font-face {
   font-family: "spaceGroesk_light";
-  src: url("./Fonts/SpaceGrotesk-Light.woff") format("woff2");
+  src: url("./fonts/SpaceGrotesk-Light.woff") format("woff2");
 }
 @font-face {
   font-family: "spaceGroesk_medium";
-  src: url("./Fonts/SpaceGrotesk-Medium.woff") format("woff2");
+  src: url("./fonts/SpaceGrotesk-Medium.woff") format("woff2");
 }
 @font-face {
   font-family: "spaceGroesk_semibold";
-  src: url("./Fonts/SpaceGrotesk-SemiBold.woff") format("woff2");
+  src: url("./fonts/SpaceGrotesk-SemiBold.woff") format("woff2");
 }
 @font-face {
   font-family: "spaceGroesk_bold";
-  src: url("./Fonts/SpaceGrotesk-Bold.woff") format("woff2");
+  src: url("./fonts/SpaceGrotesk-Bold.woff") format("woff2");
 }
 h2 {
   font-family: "spaceGroesk_semibold";
@@ -37,26 +37,6 @@ button {
   font-family: "spaceGroesk";
 }
 .wrapper {
-  margin-left: 100px;
-  margin-right: 100px;
-  @media (max-width: 1280px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  @media (max-width: 980px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (max-width: 768px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  @media (max-width: 640px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  @media (max-width: 480px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  width: 90%;
+  margin: 0 auto;
 }

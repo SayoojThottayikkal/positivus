@@ -6,45 +6,43 @@ import "../App.css";
 
 function Contact() {
   return (
-    <>
-      <Maindiv className="wrapper">
-        <Heading>
-          <Title
-            heading="Contact Us"
-            discription="Connect with Us: Let's Discuss Your  Digital Marketing Needs"
-          />
-        </Heading>
-        <ContactDiv>
-          <LeftDiv>
-            <Div>
-              <div>
-                <label htmlFor=""> </label> Say Hi
-              </div>
-              <div>
-                <label htmlFor=""></label> Get a Quote
-              </div>
-            </Div>
+    <Maindiv className="wrapper">
+      <Heading>
+        <Title
+          heading="Contact Us"
+          discription="Connect with Us: Let's Discuss Your  Digital Marketing Needs"
+        />
+      </Heading>
+      <ContactDiv>
+        <LeftDiv>
+          <Div>
+            <div>
+              <label htmlFor=""> </label> Say Hi
+            </div>
+            <div>
+              <label htmlFor=""></label> Get a Quote
+            </div>
+          </Div>
 
-            <Namediv>
-              Name <br />
-              <input type="text" placeholder="name" />
-            </Namediv>
-            <Emaildiv>
-              Email <br />
-              <input type="email" placeholder="Email" />
-            </Emaildiv>
-            <Messagediv>
-              Message <br />
-              <textarea name="" id="" placeholder="Message"></textarea>
-            </Messagediv>
-            <button>Send Message</button>
-          </LeftDiv>
-          <RightDiv>
-            <img src={pic} alt="" />
-          </RightDiv>
-        </ContactDiv>
-      </Maindiv>
-    </>
+          <Namediv>
+            Name <br />
+            <input type="text" placeholder="name" required />
+          </Namediv>
+          <Emaildiv>
+            Email <br />
+            <input type="email" placeholder="Email" />
+          </Emaildiv>
+          <Messagediv>
+            Message <br />
+            <textarea name="" id="" placeholder="Message"></textarea>
+          </Messagediv>
+          <button>Send Message</button>
+        </LeftDiv>
+        <RightDiv>
+          <img src={pic} alt="" />
+        </RightDiv>
+      </ContactDiv>
+    </Maindiv>
   );
 }
 const Maindiv = styled.div``;

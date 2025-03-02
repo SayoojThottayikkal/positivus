@@ -12,14 +12,14 @@ import styled from "styled-components";
 import Title from "./Title";
 
 function Services() {
-  const [data, setData] = useState([
+  const data = [
     { title: "Search engine ", title1: "optimization", image: img1 },
     { title: "Pay-per-click ", title1: "advertising", image: img2 },
     { title: "Social Media ", title1: "Marketing", image: img3 },
     { title: "Email ", title1: "Marketing", image: img4 },
     { title: "Content ", title1: "Creation", image: img5 },
     { title: "Analytics and ", title1: "Tracking", image: img6 },
-  ]);
+  ];
   console.log(data, "data");
 
   return (
